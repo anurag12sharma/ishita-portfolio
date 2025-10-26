@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --primary-background: #673fcc;
+    --primary-foreground: #fefeff;
+    --primary-light: #814eff;
+    --primary-dark: #673fcc;
+
+    /* Secondary Colors */
+    --secondary-background: #ffffff;
+    --secondary-foreground: #000000;
+    --secondary-light: #fdfdfd;
+    --secondary-dark: #333333;
+
+    /* Accent Colors */
+    --accent-green: #199b44;
+    --accent-green-text: #1a9b44;
+    --accent-brown: #9d733b;
+    --accent-yellow: #ffe37f;
+    --accent-yellow-light: #ffeca9;
+    --accent-purple-light: #cdb9ff;
+
+    /* Text Colors */
+    --text-primary: #000000;
+    --text-secondary: #4c4c4c;
+    --text-muted: #646464;
+    --text-light: #666666;
+    --text-white: #fafafa;
+    --text-bright: #fefeff;
+
+    /* Background Colors */
+    --bg-main: #ffffff;
+    --bg-card: #fdfdfd;
+  --bg-overlay: rgba(228, 228, 228, 0.9);
+    --bg-accent: #fefefe;
+
+    /* Border Colors */
+    --border-primary: #666666;
+    --border-light: #ffffff;
+
+    /* Typography Variables */
+    --font-size-xs: 16px;
+    --font-size-sm: 19px;
+    --font-size-md: 20px;
+    --font-size-lg: 22px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 26px;
+    --font-size-3xl: 58px;
+    --font-size-4xl: 130px;
+
+    /* Font Weight Variables */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-black: 900;
+
+    /* Line Height Variables */
+    --line-height-xs: 24px;
+    --line-height-sm: 29px;
+    --line-height-md: 30px;
+    --line-height-lg: 31px;
+    --line-height-xl: 33px;
+    --line-height-2xl: 34px;
+    --line-height-3xl: 36px;
+    --line-height-4xl: 39px;
+    --line-height-5xl: 70px;
+    --line-height-6xl: 71px;
+    --line-height-7xl: 159px;
+
+    /* Spacing Variables */
+    --spacing-xs: 4px;
+    --spacing-sm: 6px;
+    --spacing-md: 8px;
+    --spacing-lg: 10px;
+    --spacing-xl: 12px;
+    --spacing-2xl: 14px;
+    --spacing-3xl: 16px;
+    --spacing-4xl: 18px;
+    --spacing-5xl: 20px;
+    --spacing-6xl: 22px;
+    --spacing-7xl: 24px;
+    --spacing-8xl: 26px;
+    --spacing-9xl: 28px;
+    --spacing-10xl: 30px;
+    --spacing-11xl: 32px;
+    --spacing-12xl: 34px;
+    --spacing-13xl: 36px;
+    --spacing-14xl: 38px;
+    --spacing-15xl: 40px;
+    --spacing-16xl: 42px;
+    --spacing-17xl: 44px;
+    --spacing-18xl: 46px;
+    --spacing-19xl: 50px;
+    --spacing-20xl: 52px;
+    --spacing-21xl: 54px;
+    --spacing-22xl: 56px;
+    --spacing-23xl: 58px;
+    --spacing-24xl: 60px;
+    --spacing-25xl: 62px;
+    --spacing-26xl: 64px;
+    --spacing-27xl: 66px;
+    --spacing-28xl: 84px;
+    --spacing-29xl: 90px;
+    --spacing-30xl: 94px;
+    --spacing-31xl: 108px;
+    --spacing-32xl: 130px;
+    --spacing-33xl: 134px;
+    --spacing-34xl: 138px;
+    --spacing-35xl: 140px;
+    --spacing-36xl: 186px;
+    --spacing-37xl: 216px;
+    --spacing-38xl: 262px;
+    --spacing-39xl: 470px;
+    --spacing-40xl: 604px;
+
+    /* Border Radius Variables */
+    --radius-sm: 10px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
+    --radius-2xl: 22px;
+    --radius-full: 100px;
+
+    /* Border Width Variables */
+    --border-width-thin: 1px;
+    --border-width-thick: 3px;
+
+    /* Component-specific Variables */
+    --header-bg: #ffffff;
+    --header-padding-x: 16px;
+    --header-padding-y: 14px;
+
+    --logo-width: 150px;
+
+    --menu-gap: 64px;
+    --menu-font-size: 20px;
+    --menu-font-weight: 500;
+    --menu-line-height: 30px;
+    --menu-text-color: #000000;
+
+    --button-font-size-sm: 16px;
+    --button-font-size-md: 20px;
+    --button-padding-sm: 10px;
+    --button-padding-md: 16px;
+    --button-padding-lg: 18px;
+    --button-radius-sm: 12px;
+    --button-radius-md: 22px;
+
+    --chip-padding: 10px;
+    --chip-border-radius: 12px;
+    --chip-border-width: 1px;
+    --chip-text-color: #666666;
+    --chip-border-color: #666666;
+
+    --list-margin-top: 134px;
+    --list-margin-bottom: 94px;
+    --list-gap-sm: 24px;
+    --list-gap-lg: 84px;
+
+    --footer-bg: #ffffff;
+    --footer-radius: 100px;
+  }
+}
