@@ -4,6 +4,7 @@ import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
 import PersonalIntro from './PersonalIntro';
 import CoreValues from './CoreValues';
+import FunFacts from './FunFacts';
 import ContactSection from './ContactSection';
 
 const About = () => {
@@ -18,13 +19,14 @@ const About = () => {
 
       <div className="w-full bg-background-card overflow-x-hidden">
         <Header />
-        
+
         <main>
           <PersonalIntro />
           <CoreValues />
+          <FunFacts />
           <ContactSection />
         </main>
-        
+
         <Footer />
       </div>
     </>

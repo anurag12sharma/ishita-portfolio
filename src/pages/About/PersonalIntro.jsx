@@ -1,120 +1,120 @@
 import React from 'react';
 
 const PersonalIntro = () => {
+  const illustrations = [
+    { src: "/images/about-01.svg", alt: "Character illustration 1" },
+    { src: "/images/about-02.svg", alt: "Character illustration 2" },
+    { src: "/images/about-03.svg", alt: "Character illustration 3" },
+    { src: "/images/about-04.svg", alt: "Character illustration 4" },
+    { src: "/images/about-05.svg", alt: "Character illustration 5" }
+  ];
+
   return (
-    <section className="w-full">
+    <section className="w-full animate-fade-in relative overflow-hidden">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center mt-[69px] sm:mt-[100px] md:mt-[120px] lg:mt-[138px]">
+        <div className="flex flex-col items-center mt-[20px] sm:mt-[30px] md:mt-[40px] lg:mt-[50px]">
           {/* Hero Title Section */}
-          <div className="flex flex-col items-center w-full sm:w-[90%] md:w-[70%] lg:w-[38%] mb-[47px] sm:mb-[70px] md:mb-[80px] lg:mb-[94px]">
-            <div className="relative flex justify-center items-center w-full mb-4 sm:mb-6 md:mb-4 lg:mb-4">
-              <div className="absolute w-[82px] sm:w-[120px] md:w-[140px] lg:w-[164px] h-[22px] sm:h-[32px] md:h-[38px] lg:h-[44px] bg-accent-purpleLight rounded-full top-[5px] sm:top-[7px] md:top-[8px] lg:top-[10px] right-[18px] sm:right-[26px] md:right-[30px] lg:right-[36px]"></div>
-              <h1 className="relative z-10 text-[29px] sm:text-[40px] md:text-[50px] lg:text-3xl font-semibold leading-[35px] sm:leading-[48px] md:leading-[60px] lg:leading-6xl text-text-primary font-[Montserrat] text-center">
-                <span>Who's </span>
-                <span className="italic">ishita?</span>
+          <div className="flex flex-col items-center w-full max-w-3xl mb-[20px] sm:mb-[25px] md:mb-[30px] lg:mb-[35px]">
+
+            {/* Main heading with enhanced design */}
+            <div className="relative flex justify-center items-center w-full mb-2 animate-slide-up" style={{animationDelay: '0.1s'}}>
+              {/* Multiple decorative elements */}
+              <div className="absolute w-[100px] sm:w-[140px] md:w-[160px] lg:w-[180px] h-[28px] sm:h-[38px] md:h-[44px] lg:h-[50px] bg-gradient-to-r from-purple-200 to-pink-200 rounded-full top-[8px] sm:top-[10px] md:top-[12px] lg:top-[14px] right-[170px] sm:right-[170px] md:right-[230px] lg:right-[200px] transition-all duration-500 hover:scale-110 blur-sm"></div>
+              <div className="absolute w-[90px] sm:w-[130px] md:w-[150px] lg:w-[170px] h-[24px] sm:h-[34px] md:h-[40px] lg:h-[46px] bg-accent-purpleLight rounded-full top-[6px] sm:top-[8px] md:top-[10px] lg:top-[12px] right-[12px] sm:right-[22px] md:right-[27px] lg:right-[32px] transition-all duration-300 hover:scale-110"></div>
+              
+              <h1 className="relative z-10 text-[36px] sm:text-[48px] md:text-[56px] lg:text-[64px] font-bold leading-[42px] sm:leading-[56px] md:leading-[64px] lg:leading-[72px] text-text-primary font-montserrat text-center">
+                <span className="bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">Who's </span>
+                <span className="italic bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">ishita</span>
+                <span className="bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">?</span>
               </h1>
             </div>
             
-            <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-lg font-normal leading-[24px] sm:leading-[27px] md:leading-[30px] lg:leading-xl text-text-light font-[Poppins] text-center mb-[20px] sm:mb-[30px] md:mb-[35px] lg:mb-[40px]">
-              I am so excited you want to know more about me!
+            {/* Subtitle with better styling */}
+            <p className="text-[17px] sm:text-[19px] md:text-[21px] lg:text-[22px] font-normal leading-[26px] sm:leading-[29px] md:leading-[32px] lg:leading-[34px] text-text-light font-poppins text-center mb-3 max-w-xl animate-slide-up" style={{animationDelay: '0.2s'}}>
+              I am so excited you want to know more about me! Let's dive into my journey.
             </p>
             
-            <div className="flex items-center gap-2">
-              <span className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-lg font-normal leading-[24px] sm:leading-[27px] md:leading-[30px] lg:leading-xl text-primary-light font-[Poppins] underline">
-                View my resume
-              </span>
-              <img 
-                src="/images/img_ic_round_download.svg" 
-                alt="Download resume" 
-                className="w-[24px] h-[24px]"
-              />
+            {/* Enhanced CTA button */}
+            <div className="animate-slide-up" style={{animationDelay: '0.3s'}}>
+              <a 
+                href="/resume.pdf" 
+                download
+                className="group relative inline-flex items-center gap-3 px-6 py-3.5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-full shadow-medium hover:shadow-hover transition-all duration-300 hover:scale-105 overflow-hidden"
+              >
+                {/* Button shine effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                
+                <span className="relative text-[16px] sm:text-[17px] md:text-[18px] font-poppins">
+                  View my resume
+                </span>
+                <svg 
+                  className="relative w-5 h-5 transition-transform duration-300 group-hover:translate-y-1" 
+                  fill="currentColor" 
+                  viewBox="0 0 20 20"
+                >
+                  <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </a>
             </div>
           </div>
 
-          {/* Illustration Gallery */}
-          <div className="w-full overflow-x-auto mb-[45px] sm:mb-[65px] md:mb-[80px] lg:mb-[90px]">
-            <div className="flex gap-[24px] min-w-max px-4 sm:px-0">
-              {/* Illustration 1 */}
-              <div className="flex-shrink-0 w-[184px] bg-background-accent rounded-sm shadow-[2px_4px_10px_#6666661e] overflow-hidden">
-                <div className="pt-[30px] flex justify-center">
-                  <img 
-                    src="/images/img_svg_4.png" 
-                    alt="Character illustration 1" 
-                    className="w-[184px] h-[268px] object-cover"
-                  />
-                </div>
-              </div>
+          {/* Enhanced Illustration Gallery */}
+          <div className="w-full mb-[60px] sm:mb-[80px] md:mb-[100px] lg:mb-[120px] animate-slide-up" style={{animationDelay: '0.4s'}}>
+            {/* Section label */}
+            <div className="text-center mb-8">
+              <div className="w-20 h-1 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 mx-auto rounded-full"></div>
+            </div>
 
-              {/* Illustration 2 */}
-              <div className="flex-shrink-0 bg-secondary-background rounded-sm shadow-[2px_4px_10px_#6666661e] overflow-hidden">
-                <img 
-                  src="/images/img_svg_9.png" 
-                  alt="Character illustration 2" 
-                  className="w-[324px] h-[300px] object-cover rounded-sm"
-                />
-              </div>
-
-              {/* Illustration 3 */}
-              <div className="flex-shrink-0 bg-secondary-background rounded-sm shadow-[2px_4px_10px_#6666661e] overflow-hidden">
-                <img 
-                  src="/images/img_svg_8.png" 
-                  alt="Character illustration 3" 
-                  className="w-[324px] h-[300px] object-cover rounded-sm"
-                />
-              </div>
-
-              {/* Illustration 4 - Complex Stack */}
-              <div className="flex-shrink-0 relative w-[324px] h-[300px] bg-secondary-background rounded-sm shadow-[2px_4px_10px_#6666661e] overflow-hidden">
-                <div className="absolute inset-0 flex flex-col justify-center items-center px-[58px]">
-                  <div className="relative w-full h-full flex flex-col justify-center items-center">
-                    <div 
-                      className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                      style={{ backgroundImage: "url('/images/img_group_black_900_237x194.svg')" }}
-                    ></div>
-                    <div className="relative z-10 flex flex-col items-center gap-[60px] mt-[44px]">
-                      <img 
-                        src="/images/img_group_black_900.svg" 
-                        alt="Design element" 
-                        className="w-[64px] h-[40px] ml-[32px]"
-                      />
-                      <img 
-                        src="/images/img_group_gray_200.svg" 
-                        alt="Design pattern" 
-                        className="w-[140px] h-[88px]"
-                      />
-                    </div>
-                    <img 
-                      src="/images/img_group_black_900_6x142.svg" 
-                      alt="Design line" 
-                      className="absolute bottom-[6px] w-[142px] h-[6px]"
-                    />
+            {/* Scrolling gallery with enhanced styling */}
+            <div className="relative">
+              {/* Gradient overlays for smooth edges */}
+              <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
+              
+              <div className="overflow-hidden rounded-2xl">
+                <div className="flex gap-6 animate-scroll hover:animation-play-state-paused">
+                  {/* First set */}
+                  <div className="flex gap-6 flex-shrink-0">
+                    {illustrations.map((img, index) => (
+                      <div 
+                        key={`first-${index}`}
+                        className="group relative flex-shrink-0 w-[300px] sm:w-[340px] md:w-[360px] rounded-2xl overflow-hidden shadow-medium hover:shadow-hover transition-all duration-500 hover:scale-105 cursor-pointer bg-white"
+                      >
+                        {/* Gradient overlay on hover */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-purple-600/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                        
+                        {/* Image */}
+                        <div className="relative h-[320px] sm:h-[340px] md:h-[360px] overflow-hidden bg-gradient-to-br from-purple-50 to-blue-50">
+                          <img 
+                            src={img.src}
+                            alt={img.alt}
+                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                          />
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                  <img 
-                    src="/images/img_laptop_1_1.png" 
-                    alt="Laptop illustration" 
-                    className="absolute bottom-[110px] w-[154px] h-[110px]"
-                  />
-                </div>
-              </div>
 
-              {/* Illustration 5 */}
-              <div className="flex-shrink-0 w-[264px] bg-secondary-background rounded-sm shadow-[2px_4px_10px_#6666661e] overflow-hidden">
-                <div className="pt-[50px] flex justify-center">
-                  <img 
-                    src="/images/img_group_1343.png" 
-                    alt="Character illustration 5" 
-                    className="w-[106px] h-[248px] object-cover"
-                  />
+                  {/* Duplicate set for seamless loop */}
+                  <div className="flex gap-6 flex-shrink-0">
+                    {illustrations.map((img, index) => (
+                      <div 
+                        key={`second-${index}`}
+                        className="group relative flex-shrink-0 w-[300px] sm:w-[340px] md:w-[360px] rounded-2xl overflow-hidden shadow-medium hover:shadow-hover transition-all duration-500 hover:scale-105 cursor-pointer bg-white"
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-t from-purple-600/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                        
+                        <div className="relative h-[320px] sm:h-[340px] md:h-[360px] overflow-hidden bg-gradient-to-br from-purple-50 to-blue-50">
+                          <img 
+                            src={img.src}
+                            alt={img.alt}
+                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                          />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
-
-              {/* Illustration 6 */}
-              <div className="flex-shrink-0 bg-secondary-background rounded-sm shadow-[2px_4px_10px_#66666614] overflow-hidden">
-                <img 
-                  src="/images/img_group_1338.png" 
-                  alt="Character illustration 6" 
-                  className="w-[324px] h-[300px] object-cover rounded-sm"
-                />
               </div>
             </div>
           </div>

@@ -3,18 +3,18 @@ import { cva } from 'class-variance-authority';
 import { twMerge } from 'tailwind-merge';
 
 const chipViewClasses = cva(
-  'inline-flex items-center justify-center transition-all duration-200',
+  'inline-flex items-center justify-center transition-all duration-300 ease-out',
   {
     variants: {
       variant: {
-        default: 'bg-gray-100 text-gray-800 hover:bg-gray-200',
-        primary: 'bg-blue-100 text-blue-800 hover:bg-blue-200',
-        secondary: 'bg-gray-200 text-gray-700 hover:bg-gray-300',
+        default: 'bg-transparent border border-gray-300 text-gray-700 hover:border-primary-background hover:text-primary-background hover:shadow-sm hover:-translate-y-0.5',
+        primary: 'bg-primary-background text-white hover:bg-primary-dark hover:shadow-md hover:-translate-y-0.5',
+        secondary: 'bg-white border border-gray-300 text-gray-800 hover:border-gray-400 hover:shadow-sm hover:-translate-y-0.5',
       },
       size: {
-        small: 'px-2 py-1 text-xs',
-        medium: 'px-3 py-1.5 text-sm',
-        large: 'px-4 py-2 text-base',
+        small: 'px-3 py-1.5 text-xs rounded-full',
+        medium: 'px-4 py-2 text-sm rounded-full',
+        large: 'px-5 py-2.5 text-base rounded-full',
       },
     },
     defaultVariants: {

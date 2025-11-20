@@ -16,7 +16,7 @@ const Header = () => {
   const handleNavClick = (item, e) => {
     if (item.scrollTo) {
       e.preventDefault();
-      
+
       // If not on home page, navigate to home first
       if (location.pathname !== '/') {
         navigate('/');
@@ -34,7 +34,7 @@ const Header = () => {
           element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       }
-      
+
       setMenuOpen(false);
     }
   };
@@ -46,24 +46,47 @@ const Header = () => {
     return location?.pathname === '/';
   };
 
+  // Dynamic header background colors based on route
+  const getHeaderBackground = () => {
+    const path = location?.pathname;
+
+    const backgroundColors = {
+      '/': 'rgba(255, 255, 255, 0.8)', // Home - white
+      '/about': 'rgba(255, 255, 255, 0.8)', // About - white
+      '/ecowallet': 'rgba(220, 252, 231, 0.8)', // EcoWallet - light green (green-100)
+      '/represent-bihar': 'rgba(255, 247, 237, 0.8)', // RepresentBihar - light orange (orange-50)
+      '/delhi-metro': 'rgba(243, 244, 246, 0.8)', // DelhiMetro - light gray (gray-100)
+      '/gender-bias-research': 'rgba(254, 252, 232, 0.8)', // GenderBias - light yellow (yellow-50)
+      '/insta-effect': 'rgba(243, 232, 255, 0.8)', // InstaEffect - light purple (purple-100)
+    };
+
+    return backgroundColors[path] || 'rgba(255, 255, 255, 0.8)';
+  };
+
   return (
-    <header className="w-full bg-header-background shadow-soft backdrop-blur-sm sticky top-0 z-50 transition-all duration-300">
+    <header
+      className="w-full bg-header-background shadow-soft backdrop-blur-sm sticky top-0 z-50 transition-all duration-300"
+      style={{
+        backgroundColor: getHeaderBackground(),
+        boxShadow: '0 4px 16px -4px rgba(0, 0, 0, 0.06), 0 2px 8px -2px rgba(0, 0, 0, 0.04)'
+      }}
+    >
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-[14px] mx-[22px]">
           {/* Logo */}
           <div className="flex-shrink-0 animate-fade-in">
             <Link to="/" className="transform transition-transform duration-300 hover:scale-105 inline-block">
-              <img 
-                src="/images/img_header_logo.png" 
-                alt="Ishita Gupta Portfolio Logo" 
+              <img
+                src="/images/img_header_logo.svg"
+                alt="Ishita Gupta Portfolio Logo"
                 className="w-[150px] h-[34px]"
               />
             </Link>
           </div>
 
           {/* Hamburger Menu Icon (Mobile only) */}
-          <button 
-            className="block lg:hidden p-2 hover:bg-gray-100 rounded-lg transition-all duration-300 transform hover:scale-110" 
+          <button
+            className="block lg:hidden p-2 hover:bg-gray-100 rounded-lg transition-all duration-300 transform hover:scale-110"
             aria-label="Open menu"
             onClick={() => setMenuOpen(!menuOpen)}
           >
@@ -103,7 +126,10 @@ const Header = () => {
           </nav>
 
           {/* Mobile Navigation */}
-          <nav className={`${menuOpen ? 'block animate-slide-up' : 'hidden'} lg:hidden absolute top-full left-0 w-full bg-header-background shadow-large z-50 backdrop-blur-md`}>
+          <nav
+            className={`${menuOpen ? 'block animate-slide-up' : 'hidden'} lg:hidden absolute top-full left-0 w-full shadow-large z-50 backdrop-blur-md`}
+            style={{ backgroundColor: getHeaderBackground() }}
+          >
             <div className="flex flex-col py-4 px-6 space-y-4">
               {menuItems?.map((item, index) => (
                 <div key={index} className="relative transform transition-all duration-300 hover:translate-x-2">
