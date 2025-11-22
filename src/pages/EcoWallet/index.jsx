@@ -89,30 +89,42 @@ const EcoWallet = () => {
 
           {/* Slide 2 - Role and Tools */}
           <section className="min-h-screen flex items-center justify-center bg-white px-6 sm:px-12 py-20">
-            <div className="max-w-6xl w-full">
+            <div className="max-w-6xl w-full" style={{ color: '#000000B2' }}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 {/* Left side - Text content */}
                 <div className="space-y-8">
-                  <p className="text-xl sm:text-2xl text-text-secondary font-poppins leading-relaxed">
-                    Over the course of <span className="font-semibold text-text-primary">3 months</span>, I assumed the role of a <span className="font-semibold text-text-primary">product designer and researcher</span>, and utilized UX tools like user surveys, interviews, user persona, user flows to <span className="font-semibold text-text-primary">craft the visual design and prototype of the platform</span>.
+                  <p className="w-[105%] text-xl sm:text-2xl text-text-secondary font-poppins leading-relaxed">
+                    Over the course of <span className="font-semibold" style={{ color: '#3C3C3C' }}>3 months</span>, I assumed the role of a <span className="font-semibold" style={{ color: '#3C3C3C' }}>product designer and researcher</span>, and utilized UX tools like user surveys, interviews, user persona, user flows to <span className="font-semibold" style={{ color: '#3C3C3C' }}>craft the visual design and prototype of the platform</span>.
                   </p>
                 </div>
                 
                 {/* Right side - Illustration placeholder */}
                 <div className="w-full flex items-center justify-center">
-                  <div className="w-full max-w-md aspect-square bg-gray-100 rounded-2xl flex items-center justify-center shadow-lg">
-                    <div className="text-center text-gray-400 font-poppins">
-                      <img src="/images/about-04.svg" alt="" className='scale-125'/>
-                    </div>
-                  </div>
+                  <img src="/images/about-04.svg" alt="" className="scale-125" />
                 </div>
               </div>
             </div>
           </section>
 
           {/* Slide 3 - Platform Description */}
-          <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white px-6 sm:px-12">
-            <div className="max-w-4xl space-y-10">
+          <section
+            className="min-h-screen relative overflow-hidden flex items-center justify-center bg-gradient-to-br from-gray-50 to-white px-6 sm:px-12"
+            style={{
+              backgroundImage: 'url("/images/eco-bg-01.svg")',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'right top',
+              backgroundSize: 'contain',
+            }}
+          >
+            {/* Visible SVG overlay for debugging (always shown) */}
+            <img
+              src="/images/eco-bg-01.svg"
+              alt="decor"
+              className="pointer-events-none absolute right-0 top-0 h-full max-h-[720px] opacity-95"
+              style={{ filter: 'drop-shadow(0 10px 30px rgba(0,0,0,0.15)) contrast(1.15) saturate(1.1)' }}
+            />
+
+            <div className="max-w-5xl space-y-10 relative z-10 w-[120%]" style={{ color: '#000000B2' }}>
               <p className="text-xl sm:text-2xl text-text-secondary font-poppins leading-relaxed">
                 EcoWallet is a platform designed to motivate people to make sustainable choices by rewarding them for every choice they make.
               </p>
@@ -129,9 +141,9 @@ const EcoWallet = () => {
 
           {/* Slide 4 - The Context */}
           <section className="min-h-screen flex items-center justify-center bg-white px-6 sm:px-12 py-20">
-            <div className="max-w-5xl w-full space-y-12">
+            <div className="max-w-5xl w-full space-y-12" style={{ color: '#000000B2' }}>
               <div className="space-y-6">
-                <h2 className="text-4xl sm:text-5xl font-bold text-text-primary font-montserrat">
+                <h2 className="text-4xl sm:text-5xl font-bold text-text-primary font-montserrat" style={{ color: '#3C3C3C' }}>
                   The Context
                 </h2>
                 <p className="text-lg sm:text-xl text-text-secondary font-poppins leading-relaxed">
@@ -143,14 +155,12 @@ const EcoWallet = () => {
                 {/* Current Landscape */}
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
-                    <svg className="w-10 h-10 text-accent-green" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/>
-                    </svg>
-                    <h3 className="text-2xl sm:text-3xl font-semibold text-accent-green font-poppins">
+                    <img className="w-10 h-10" src="./images/eco-icon-01.svg" alt="" />
+                    <h3 className="text-2xl sm:text-3xl font-semibold text-accent-green font-poppins" style={{ color: '#3C3C3C' }}>
                       Current Landscape
                     </h3>
                   </div>
-                  <div className="pl-14 space-y-3">
+                  <div className="space-y-3">
                     <p className="text-base sm:text-lg text-text-secondary font-poppins leading-relaxed">
                       The allure of lower prices and accessibility to mass-produced goods contribute to a cycle of overconsumption.
                     </p>
@@ -163,14 +173,12 @@ const EcoWallet = () => {
                 {/* The Gap */}
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
-                    <svg className="w-10 h-10 text-accent-green" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
-                    </svg>
-                    <h3 className="text-2xl sm:text-3xl font-semibold text-accent-green font-poppins">
+                    <img className="w-10 h-10" src="./images/eco-icon-02.svg" alt="" />
+                    <h3 className="text-2xl sm:text-3xl font-semibold text-accent-green font-poppins" style={{ color: '#3C3C3C' }}>
                       The Gap
                     </h3>
                   </div>
-                  <div className="pl-14 space-y-3">
+                  <div className="space-y-3">
                     <p className="text-base sm:text-lg text-text-secondary font-poppins leading-relaxed">
                       The lack of extrinsic rewards for choosing the more responsible path.
                     </p>
@@ -183,14 +191,12 @@ const EcoWallet = () => {
                 {/* Bridging The Gap */}
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
-                    <svg className="w-10 h-10 text-accent-green" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                    <h3 className="text-2xl sm:text-3xl font-semibold text-accent-green font-poppins">
+                    <img className="w-8 h-8" src="./images/eco-icon-03.svg" alt="" />
+                    <h3 className="text-2xl sm:text-3xl font-semibold text-accent-green font-poppins" style={{ color: '#3C3C3C' }}>
                       Bridging The Gap
                     </h3>
                   </div>
-                  <div className="pl-14 space-y-3">
+                  <div className="space-y-3">
                     <p className="text-base sm:text-lg text-text-secondary font-poppins leading-relaxed">
                       Bridging this gap could be possible if people feel motivated by instantly gratifying outcomes.
                     </p>
@@ -205,12 +211,12 @@ const EcoWallet = () => {
 
           {/* Slide 5 - Unpacking User Eco-Behaviour */}
           <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white px-6 sm:px-12 py-20">
-            <div className="max-w-6xl w-full">
+            <div className="max-w-6xl w-full" style={{ color: '#000000B2' }}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                 {/* Left side - Content */}
                 <div className="space-y-12">
-                  <div className="space-y-6">
-                    <h2 className="text-4xl sm:text-5xl font-bold text-text-primary font-montserrat">
+                  <div className="space-y-6 w-[120%]">
+                    <h2 className="text-4xl sm:text-5xl font-bold text-text-primary font-montserrat" style={{ color: '#3C3C3C' }}>
                       Unpacking user eco-behaviour
                     </h2>
                     <p className="text-base sm:text-lg text-text-secondary font-poppins leading-relaxed">
@@ -220,21 +226,21 @@ const EcoWallet = () => {
                   
                   {/* Research questions */}
                   <div className="space-y-6">
-                    <h3 className="text-2xl font-semibold text-text-primary font-poppins">
+                    <h3 className="text-2xl font-semibold text-text-primary font-poppins" style={{ color: '#3C3C3C' }}>
                       Research questions for the survey
                     </h3>
-                    <div className="space-y-4">
-                      <div className="border-2 border-green-500 rounded-2xl p-4">
+                    <div className="flex flex-col md:flex-row gap-4 w-[210%] max-w-[230%]">
+                      <div className="border-2 border-[#0C9F1A] rounded-2xl p-4 flex-1">
                         <p className="text-base text-text-secondary font-poppins">
                           How far people are willing to go to contribute toward sustainability.
                         </p>
                       </div>
-                      <div className="border-2 border-green-500 rounded-2xl p-4">
+                      <div className="border-2 border-[#0C9F1A] rounded-2xl p-4 flex-1">
                         <p className="text-base text-text-secondary font-poppins">
                           Are people motivated to shop sustainably and support small businesses.
                         </p>
                       </div>
-                      <div className="border-2 border-green-500 rounded-2xl p-4">
+                      <div className="border-2 border-[#0C9F1A] rounded-2xl p-4 flex-1">
                         <p className="text-base text-text-secondary font-poppins">
                           Finding if people are motivated to reuse, recycle, donate and support NGOs.
                         </p>
@@ -244,31 +250,31 @@ const EcoWallet = () => {
                   
                   {/* Survey insights */}
                   <div className="space-y-6">
-                    <h3 className="text-2xl font-semibold text-text-primary font-poppins">
+                    <h3 className="text-2xl font-semibold text-text-primary font-poppins" style={{ color: '#3C3C3C' }}>
                       Survey data Insights
                     </h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-[220%] max-w-[200%]">
                       <div className="space-y-2">
-                        <p className="text-4xl text-green-500 sm:text-5xl font-bold text-accent-green font-montserrat">
+                        <p className="text-4xl sm:text-5xl font-poppins" style={{ width: '785px', height: '116px', opacity: 1, fontFamily: "'Poppins', sans-serif", fontWeight: 500, lineHeight: '98px', letterSpacing: '0.01em', color: '#0C9F1A', margin: 0 }}>
                           59.5%
                         </p>
-                        <p className="text-sm text-text-secondary font-poppins">
+                        <p className="text-sm text-text-secondary font-poppins max-w-[60%] -mt-6">
                           people are not motivated to go the extra mile
                         </p>
                       </div>
                       <div className="space-y-2">
-                        <p className="text-4xl text-green-500 sm:text-5xl font-bold text-accent-green font-montserrat">
+                        <p className="text-4xl sm:text-5xl font-poppins" style={{ width: '785px', height: '116px', opacity: 1, fontFamily: "'Poppins', sans-serif", fontWeight: 500, lineHeight: '98px', letterSpacing: '0.01em', color: '#0C9F1A', margin: 0 }}>
                           34.2%
                         </p>
-                        <p className="text-sm text-text-secondary font-poppins">
+                        <p className="text-sm text-text-secondary font-poppins max-w-[60%] -mt-6">
                           people are unaware about ways to recycle and donate
                         </p>
                       </div>
                       <div className="space-y-2">
-                        <p className="text-4xl text-green-500 sm:text-5xl font-bold text-accent-green font-montserrat">
+                        <p className="text-4xl sm:text-5xl font-poppins" style={{ width: '785px', height: '116px', opacity: 1, fontFamily: "'Poppins', sans-serif", fontWeight: 500, lineHeight: '98px', letterSpacing: '0.01em', color: '#0C9F1A', margin: 0 }}>
                           23.7%
                         </p>
-                        <p className="text-sm text-text-secondary font-poppins">
+                        <p className="text-sm text-text-secondary font-poppins max-w-[60%] -mt-6">
                           people are aware about climate change and make eco-friendly choices
                         </p>
                       </div>
@@ -278,11 +284,9 @@ const EcoWallet = () => {
                 
                 {/* Right side - Illustration placeholder */}
                 <div className="w-full flex items-center justify-center lg:justify-end">
-                  <div className="w-full max-w-sm aspect-[3/4] bg-gray-100 rounded-2xl flex items-center justify-center shadow-lg">
                     <div className="text-center text-gray-400 font-poppins">
                       <img src="/images/about-03.svg" alt="" />
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
