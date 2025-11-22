@@ -62,7 +62,7 @@ const ProjectShowcase = () => {
       image: '/images/rp-instaEffect.png',
       title: 'Impact of Social Media on Body Image Satisfaction',
       organization: 'IIIT-Delhi',
-      description: 'My work at IIIT-Delhi, undertaken at the MIDAS Lab with guidance by Dr. Maitreyi Redkar of IIT-Bombay is under review at []. The study evaluates the real-time effect of social media interaction on body image satisfaction and eating habits of young adults. Check out the overview slides to read in detail about the study.',
+      description: 'My work at IIIT-Delhi, undertaken at the MIDAS Lab with guidance by Dr. Maitreyi Redkar of IIT-Bombay is under review at Springer Nature Scientific Reports. The study evaluates the real-time effect of social media interaction on body image satisfaction and eating habits of young adults. Check out the overview slides to read in detail about the study.',
       buttonColor: 'bg-secondary-dark',
       route: '/insta-effect'
     }
@@ -210,13 +210,11 @@ const ProjectShowcase = () => {
         {/* Research Projects Section */}
         <section id="research" className="px-6 sm:px-8 lg:px-12 pt-32 lg:pt-40 pb-16 animate-fade-in">
           <div className="mb-16 lg:mb-20">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-text-primary font-montserrat mb-3 animate-slide-in-left">
-              <span className="inline-block w-16 h-1 bg-secondary-dark mr-4 align-middle"></span>
-              <span className="text-secondary-dark">Research Projects</span>
+            <h2 className="flex items-center gap-4 text-[26px] font-medium font-poppins mb-3 animate-slide-in-left leading-[48px] h-[48px] tracking-normal -ml-8 lg:-ml-20">
+              <span className="inline-block w-16 h-1 bg-primary-background mr-0 align-middle"></span>
+              <span className="text-[#673fcc]">02 \</span>
+              <span className="text-[#808080] block max-w-[380px] lg:max-w-[520px]">Research Projects</span>
             </h2>
-            <p className="text-base sm:text-lg text-text-muted font-poppins ml-20 animate-slide-in-left" style={{ animationDelay: '0.1s' }}>
-              Investigating technology's impact on human behavior and society
-            </p>
           </div>
 
           {/* Research Project Carousel */}
@@ -358,15 +356,6 @@ const ProjectShowcase = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Let's Talk Section */}
-        <section className="flex flex-col justify-center items-center w-full pt-32 lg:pt-40 pb-20 lg:pb-24 animate-fade-in">
-          <div className="text-center space-y-4 px-6">
-            <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black leading-tight bg-gradient-to-r from-[#e4d9ff] via-[#c2aaff] to-[#a88fff] bg-clip-text text-transparent font-montserrat transition-all duration-500 hover:scale-105 cursor-default animate-pulse-slow drop-shadow-sm">
-              LET'S TALK
-            </h2>
           </div>
         </section>
       </div>

@@ -1,120 +1,232 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Toast from '../ui/Toast';
 
 const Footer = () => {
-  const socialLinks = [
-    {
-      name: 'Google Scholar',
-      src: '/images/img_academicons_google_scholar.svg',
-      width: '30px',
-      height: '40px',
-      href: '#'
-    },
-    {
-      name: 'Behance',
-      src: '/images/img_ri_behance_line.svg',
-      width: '42px',
-      height: '42px',
-      href: '#'
-    },
-    {
-      name: 'LinkedIn',
-      src: '/images/img_mdi_linkedin.svg',
-      width: '40px',
-      height: '40px',
-      href: '#'
-    },
-    {
-      name: 'Portfolio',
-      src: '/images/img_group.png',
-      width: '32px',
-      height: '32px',
-      href: '#'
-    }
-  ];
+  const [toast, setToast] = useState({ show: false, message: '' });
 
-  const handleCopyEmail = () => {
-    navigator.clipboard?.writeText('ms.ishitagupta@gmail.com');
+  const handleCopyEmail = async () => {
+    try {
+      await navigator.clipboard?.writeText('ms.ishitagupta@gmail.com');
+      setToast({ show: true, message: 'Email copied to clipboard' });
+    } catch (e) {
+      setToast({ show: true, message: 'Could not copy email' });
+    }
   };
 
   return (
-    <footer className="w-full bg-white border-t border-gray-200 mt-20">
-      <div className="w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        {/* Main Footer Content */}
-        <div className="py-8 sm:py-10">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
-            {/* Contact Section */}
-            <div className="flex items-center gap-3 group">
-              <div className="p-2.5 bg-primary-background/10 rounded-lg transition-all duration-300 group-hover:bg-primary-background/20">
-                <img 
-                  src="/images/img_mingcute_mail_fill.svg" 
-                  alt="Email icon" 
-                  className="w-5 h-5"
-                />
-              </div>
-              <div className="flex flex-col gap-0.5">
-                <p className="text-xs text-text-muted font-poppins">
+    <footer className="w-full relative overflow-visible pt-20">
+      {/* Background Text */}
+      <h1
+        className="select-none pointer-events-none text-center"
+        style={{
+          position: 'relative',
+          top: '75%',
+          left: '50%',
+          width: 'min(786px, 90vw)',
+          height: 'auto',
+          opacity: 1,
+          zIndex: 0,
+          fontFamily: 'Montserrat, sans-serif',
+          fontWeight: 900,
+          fontStyle: 'normal',
+          fontSize: 'clamp(80px, 12vw, 130px)',
+          lineHeight: '100%',
+          letterSpacing: '0',
+          transform: 'translate(-50%, -50%) rotate(0deg)',
+          margin: 0,
+          background: 'linear-gradient(134.82deg, #E4DAFF -9.23%, #D6C5FF 76.93%, #C3ABFF 162.76%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+          color: 'transparent',
+          textAlign: 'center'
+        }}
+      >
+        LET'S TALK
+      </h1>
+
+      {/* Yellow Bottom Section */}
+      <div className="bg-[#FFF6C3] w-full pb-8 relative mt-20">
+        {/* Blurred top strip to visually merge the yellow section with the white card */}
+        <div
+          aria-hidden="true"
+          style={{
+            position: 'absolute',
+            top: '28px',
+            left: 0,
+            right: 0,
+            height: '72px',
+            background: '#FFF6C3',
+            filter: 'blur(18px)',
+            WebkitFilter: 'blur(18px)',
+            zIndex: 11,
+            pointerEvents: 'none',
+            borderTopLeftRadius: '2rem',
+            borderTopRightRadius: '2rem',
+            opacity: 0.95
+          }}
+        />
+        {/* Floating White Card */}
+        <div className="relative -top-16 sm:-top-24 w-full">  
+          <div
+            className="flex items-center justify-center bg-white rounded-[2rem] w-full p-8 sm:p-10 text-center relative z-10"
+            style={{
+              boxShadow: '0 -12px 24px rgba(0,0,0,0.08)',
+              borderBottomLeftRadius: 0,
+              borderBottomRightRadius: 0,
+              border: 'none',
+              outline: 'none'
+            }}
+          >
+            <div className="flex items-center gap-6">
+              <img
+                src="/images/img_mingcute_mail_fill.svg"
+                alt="Mail"
+                className="w-12 h-12 sm:w-14 sm:h-14"
+              />
+
+              <div className="flex flex-col items-start gap-1">
+                <p
+                  className="font-poppins"
+                  style={{
+                    width: '360px',
+                    height: '38px',
+                    opacity: 1,
+                    fontFamily: 'Poppins, sans-serif',
+                    fontWeight: 400,
+                    fontStyle: 'normal',
+                    fontSize: '16px',
+                    lineHeight: '38px',
+                    marginBottom: '0px',
+                    // 2% of 16px ≈ 0.32px
+                    letterSpacing: '0.32px',
+                    color: '#666666'
+                  }}
+                >
                   Drop a message. I promise I am super nice!
                 </p>
+
                 <div className="flex items-center gap-2">
-                  <a 
+                  <a
                     href="mailto:ms.ishitagupta@gmail.com"
-                    className="text-base font-semibold text-primary-dark hover:text-primary-background transition-colors duration-300 font-poppins"
+                    className="font-poppins transition-colors"
+                    style={{
+                      display: 'inline-block',
+                      width: '344px',
+                      height: '36px',
+                      opacity: 1,
+                      fontFamily: 'Poppins, sans-serif',
+                      fontWeight: 600,
+                      fontStyle: 'normal',
+                      fontSize: '24px',
+                      lineHeight: '100%',
+                      letterSpacing: '0px',
+                      color: '#4C4C4C',
+                      textDecoration: 'none'
+                    }}
                   >
                     ms.ishitagupta@gmail.com
                   </a>
-                  <button 
+                  <button
                     onClick={handleCopyEmail}
-                    className="p-1 rounded-md hover:bg-gray-100 transition-all duration-300 hover:scale-110 active:scale-95"
-                    aria-label="Copy email address"
+                    className="p-2 hover:bg-gray-100 rounded-full transition-all group"
+                    aria-label="Copy email"
+                    style={{ marginTop: '-6px' }}
                   >
-                    <img 
-                      src="/images/img_si_copy_duotone.svg" 
-                      alt="Copy email" 
-                      className="w-4 h-4"
+                    <img
+                      src="/images/img_si_copy_duotone.svg"
+                      alt="Copy"
+                      className="w-5 h-5 opacity-50 group-hover:opacity-100 transition-opacity"
                     />
                   </button>
                 </div>
               </div>
             </div>
-
-            {/* Social Links */}
-            <div className="flex items-center gap-3">
-              {socialLinks?.map((link, index) => (
-                <a
-                  key={index}
-                  href={link?.href}
-                  className="p-2.5 bg-gray-50 rounded-lg hover:bg-primary-background hover:shadow-md transform transition-all duration-300 hover:scale-110 hover:-translate-y-0.5 active:scale-95 group"
-                  aria-label={link?.name}
-                >
-                  <img 
-                    src={link?.src} 
-                    alt={link?.name}
-                    style={{ width: link?.width, height: link?.height }}
-                    className="group-hover:brightness-0 group-hover:invert transition-all duration-300"
-                  />
-                </a>
-              ))}
-            </div>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-gray-200 py-4">
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
-            <span className="text-sm text-text-secondary font-poppins">
-              © 2025 Made with
-            </span>
-            <img 
-              src="/images/img_typcn_heart.svg" 
-              alt="Heart" 
-              className="w-5 h-5 animate-pulse-slow"
-            />
-            <span className="text-sm text-text-secondary font-poppins">
-              by Ishita
-            </span>
+        {/* Footer Bottom Content */}
+        <div className="max-w-7xl mx-auto px-6 sm:px-12 flex flex-col sm:flex-row items-center justify-between gap-8 -mt-8">
+          {/* Left: Bow + Text */}
+            <div className="flex items-center gap-4 text-center sm:text-left">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0">
+                <img
+                  src="/images/img_fluent_bow_tie_20_filled.svg"
+                  alt="Bow"
+                  className="w-full h-full text-[#FF69B4] filter"
+                  style={{ filter: 'invert(59%) sepia(94%) saturate(348%) hue-rotate(296deg) brightness(94%) contrast(99%)' }}
+                />
+              </div>
+              <p
+                className="font-poppins"
+                style={{
+                  display: 'inline-block',
+                  width: '833px',
+                  height: '45px',
+                  transform: 'rotate(0deg)',
+                  opacity: 1,
+                  fontFamily: 'Poppins, sans-serif',
+                  fontWeight: 500,
+                  fontStyle: 'normal',
+                  fontSize: '19px',
+                  lineHeight: '41px',
+                  // 1% of 19px ≈ 0.19px
+                  letterSpacing: '0.19px',
+                  color: '#656565'
+                }}
+              >
+                Let's chat about HCI, Design, Cinnamon Lattes, or The Office :)
+              </p>
+            </div>
+
+          {/* Right: Social Icons */}
+          <div className="flex items-center gap-6">
+            <a href="#" className="hover:scale-110 transition-transform">
+              <img src="/images/img_academicons_google_scholar.svg" alt="Google Scholar" className="w-6 h-6 sm:w-7 sm:h-7 opacity-70 hover:opacity-100" />
+            </a>
+            <a href="#" className="hover:scale-110 transition-transform">
+              <img src="/images/img_mdi_linkedin.svg" alt="LinkedIn" className="w-6 h-6 sm:w-7 sm:h-7 opacity-70 hover:opacity-100" />
+            </a>
+            <a href="#" className="hover:scale-110 transition-transform text-[#E1306C]">
+              {/* Instagram SVG Fallback since file might be missing or different */}
+              <svg className="w-6 h-6 sm:w-7 sm:h-7 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="mt-12 text-center">
+          <div
+            className="font-poppins"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '8px',
+              width: 'auto',
+              height: '41px',
+              whiteSpace: 'nowrap',
+              transform: 'rotate(0deg)',
+              opacity: 1,
+              fontFamily: 'Poppins, sans-serif',
+              fontWeight: 400,
+              fontStyle: 'normal',
+              fontSize: '19px',
+              lineHeight: '41px',
+              // 1% of 19px ≈ 0.19px
+              letterSpacing: '0.19px',
+              color: '#4C4C4C'
+            }}
+          >
+            <span>© 2025-Made with</span>
+            <img src="/images/img_typcn_heart.svg" alt="Heart" className="w-4 h-4" />
+            <span>by Ishita.</span>
           </div>
         </div>
       </div>
+      <Toast show={toast.show} message={toast.message} onClose={() => setToast({ show: false, message: '' })} />
     </footer>
   );
 };
