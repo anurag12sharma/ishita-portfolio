@@ -293,71 +293,36 @@ const EcoWallet = () => {
           </section>
 
           {/* Slide 6 - Interview Framework */}
-          <section className="min-h-screen flex items-center justify-center bg-white px-6 sm:px-12 py-20">
+          <section className="min-h-screen flex items-center justify-center bg-white px-6 sm:px-12 py-10">
             <div className="max-w-6xl w-full">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                {/* Left side - Illustration placeholder */}
-                <div className="w-full flex items-center justify-center order-2 lg:order-1">
-                  <div className="w-full max-w-md aspect-square bg-gray-100 rounded-2xl flex items-center justify-center shadow-lg">
-                    <div className="text-center text-gray-400 font-poppins">
-                      <img src="/images/about-05.svg" alt="" className='scale-125' />
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Right side - Content */}
-                <div className="space-y-12 order-1 lg:order-2">
-                  <div className="space-y-6">
-                    <h2 className="text-4xl sm:text-5xl font-bold text-text-primary font-montserrat">
+              <div className="flex flex-col gap-8 items-center w-full">
+                {/* Content on top */}
+                <div className="space-y-6 w-full">
+                  <div className="space-y-4">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-text-primary font-montserrat text-left" style={{ color: '#3C3C3C' }}>
                       The 'tell me more' framework for interviews
                     </h2>
-                    <p className="text-base sm:text-lg text-text-secondary font-poppins leading-relaxed">
+                    <p className="text-lg sm:text-xl text-text-secondary font-poppins leading-relaxed w-[80%] mt-12" style={{ color: '#000000B2' }}>
                       To <span className="font-semibold text-text-primary">elicit richer insights</span> into their experiences, I followed the TEDW framework (<span className="font-semibold text-text-primary">Tell me more, Explain, Describe, Walk me through</span>) for the one-on-one interviews.
                     </p>
                   </div>
-                  
-                  <div className="space-y-6">
-                    <h3 className="text-2xl sm:text-3xl font-semibold text-text-primary font-poppins">
+
+                  <div className="space-y-6 mt-24">
+                    <h3 className="text-2xl sm:text-3xl font-semibold text-text-primary font-poppins" style={{ color: '#3C3C3C' }}>
                       What NGOs and business owners had to say
                     </h3>
-                    
-                    {/* Word cloud effect with text */}
-                    <div className="bg-gray-50 rounded-2xl p-8 space-y-4">
-                      <div className="flex flex-wrap gap-3 items-center justify-center">
-                        <span className="text-2xl font-semibold text-gray-300 font-poppins">expensive</span>
-                        <span className="text-4xl font-bold text-text-primary font-poppins">struggles</span>
-                        <span className="text-lg text-gray-400 font-poppins">impact</span>
-                      </div>
-                      <div className="flex flex-wrap gap-3 items-center justify-center">
-                        <span className="text-3xl font-bold text-text-primary font-poppins">sustainability</span>
-                        <span className="text-lg text-gray-400 font-poppins">cruelty-free</span>
-                      </div>
-                      <div className="flex flex-wrap gap-3 items-center justify-center">
-                        <span className="text-3xl font-bold text-text-primary font-poppins">donation</span>
-                        <span className="text-5xl font-bold text-text-primary font-poppins">visibility</span>
-                        <span className="text-lg text-gray-400 font-poppins">customers</span>
-                      </div>
-                      <div className="flex flex-wrap gap-3 items-center justify-center">
-                        <span className="text-2xl font-semibold text-gray-300 font-poppins">marketing</span>
-                        <span className="text-3xl font-bold text-text-primary font-poppins">challenges</span>
-                        <span className="text-2xl font-semibold text-gray-300 font-poppins">money</span>
-                      </div>
-                      <div className="flex flex-wrap gap-3 items-center justify-center">
-                        <span className="text-lg text-gray-400 font-poppins">underprivileged</span>
-                        <span className="text-4xl font-bold text-text-primary font-poppins">awareness</span>
-                        <span className="text-lg text-gray-400 font-poppins">care</span>
-                      </div>
-                      <div className="flex flex-wrap gap-3 items-center justify-center">
-                        <span className="text-2xl font-semibold text-gray-300 font-poppins">environment</span>
-                        <span className="text-3xl font-bold text-text-primary font-poppins">organic</span>
-                        <span className="text-lg text-gray-400 font-poppins">scaling</span>
-                      </div>
-                      <div className="flex flex-wrap gap-3 items-center justify-center">
-                        <span className="text-2xl font-semibold text-gray-300 font-poppins">underfunded</span>
-                        <span className="text-2xl font-semibold text-gray-300 font-poppins">budget</span>
-                        <span className="text-lg text-gray-400 font-poppins">support</span>
-                      </div>
-                    </div>
+                  </div>
+                </div>
+
+                {/* Bottom: two images side-by-side on sm+ */}
+                <div className="w-full relative mt-6">
+                      <img src="/images/about-05.svg" alt="illustration" className="w-[110%] h-[110%] absolute -left-120 bottom-0" />
+                   
+                  {/* Second image: enlarged and centered */}
+                  <div className="w-full relative flex items-center justify-center -mt-10">
+                  
+                      <img src="./images/eco-05.png" alt="" className='w-[70%] h-[70%] '/>
+                    {/* </div> */}
                   </div>
                 </div>
               </div>
@@ -366,10 +331,10 @@ const EcoWallet = () => {
 
           {/* Slide 7 - Dissecting the Problem & User Persona */}
           <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white px-6 sm:px-12 py-20">
-            <div className="max-w-6xl w-full space-y-16">
+            <div className="max-w-6xl w-full space-y-16" style={{ color: '#000000B2' }}>
               {/* Dissecting the problem */}
               <div className="space-y-6">
-                <h2 className="text-4xl sm:text-5xl font-bold text-text-primary font-montserrat">
+                <h2 className="text-4xl sm:text-5xl font-bold text-text-primary font-montserrat" style={{ color: '#3C3C3C' }}>
                   Dissecting the problem
                 </h2>
                 <p className="text-base sm:text-lg text-text-secondary font-poppins leading-relaxed max-w-5xl">
@@ -379,7 +344,7 @@ const EcoWallet = () => {
 
               {/* User Persona */}
               <div className="space-y-6">
-                <h2 className="text-3xl sm:text-4xl font-bold text-text-primary font-montserrat">
+                <h2 className="text-3xl sm:text-4xl font-bold text-text-primary font-montserrat" style={{ color: '#3C3C3C' }}>
                   Understanding the sustainable user
                 </h2>
                 
@@ -404,13 +369,13 @@ const EcoWallet = () => {
 
                     {/* Right - Persona details */}
                     <div className="lg:col-span-2 space-y-8">
-                      <h3 className="text-2xl font-bold text-text-primary font-poppins">
+                      <h3 className="text-2xl font-bold text-text-primary font-poppins" style={{ color: '#3C3C3C' }}>
                         User persona: Rashika Sarkar
                       </h3>
                       
                       {/* Bio */}
                       <div className="space-y-3">
-                        <h4 className="font-semibold text-text-primary font-poppins">Bio</h4>
+                        <h4 className="font-semibold text-text-primary font-poppins" style={{ color: '#3C3C3C' }}>Bio</h4>
                         <p className="text-sm text-text-secondary font-poppins leading-relaxed">
                           Rashika is a 24 year old photographer living in Durgapur, Bengal. She has to constantly travel for work and prefers to shop online to save money and time. She is a nature lover and is passionate about sustainability and hence makes sure to recycle, shop local, and eco-friendly products.
                         </p>
@@ -418,7 +383,7 @@ const EcoWallet = () => {
 
                       {/* Challenges and Pain points */}
                       <div className="space-y-3">
-                        <h4 className="font-semibold text-text-primary font-poppins">Challenges and Pain points</h4>
+                        <h4 className="font-semibold text-text-primary font-poppins" style={{ color: '#3C3C3C' }}>Challenges and Pain points</h4>
                         <p className="text-sm text-text-secondary font-poppins leading-relaxed">
                           It is difficult to find local stores in a new city which provide good quality products, most of the good stores are expensive and do not provide coupons or discounts, difficult to look for NGOs looking for donations
                         </p>
@@ -426,7 +391,7 @@ const EcoWallet = () => {
 
                       {/* Goals and motivations */}
                       <div className="space-y-3">
-                        <h4 className="font-semibold text-text-primary font-poppins">Goals and motivations</h4>
+                        <h4 className="font-semibold text-text-primary font-poppins" style={{ color: '#3C3C3C' }}>Goals and motivations</h4>
                         <p className="text-sm text-text-secondary font-poppins leading-relaxed">
                           Promises to reuse to keep her essentials travel friendly, explore local stores and shop consciously, explore and capture the beauty in nature, be mindful of the environment, being able to save money and travel
                         </p>
