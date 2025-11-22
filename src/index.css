@@ -185,3 +185,17 @@ p {
     transform: rotate(3deg);
   }
 }
+
+/* Scoped styles for EcoWallet selected section */
+.eco-section h1,
+.eco-section h2,
+.eco-section h3,
+.eco-section h4,
+.eco-section h5,
+.eco-section h6 {
+  color: #3C3C3C;
+}
+
+.eco-section p {
+  color: #000000B2 !important;
+}

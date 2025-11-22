@@ -17,7 +17,7 @@ const EcoWallet = () => {
       <div className="w-full bg-white min-h-screen">
         <Header />
         
-        <main className="flex-grow">
+        <main className="flex-grow eco-section">
           {/* Slide 1 - Title Slide */}
           {/* Heading and Description */}
           <section className="min-h-screen relative flex items-start justify-center px-6 sm:px-12 pt-16" style={{ backgroundColor: '#D5FFE1' }}>
@@ -89,7 +89,7 @@ const EcoWallet = () => {
 
           {/* Slide 2 - Role and Tools */}
           <section className="min-h-screen flex items-center justify-center bg-white px-6 sm:px-12 py-20">
-            <div className="max-w-6xl w-full" style={{ color: '#000000B2' }}>
+                <div className="max-w-6xl w-full" style={{ color: '#000000B2' }}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 {/* Left side - Text content */}
                 <div className="space-y-8">
@@ -419,7 +419,7 @@ const EcoWallet = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Left side - Content */}
                 <div className="space-y-12">
-                  <h2 className="text-4xl sm:text-5xl font-bold text-text-primary font-montserrat">
+                  <h2 className="text-4xl sm:text-5xl font-bold text-text-primary font-montserrat w-[120%]">
                     Ideating potential paths
                   </h2>
                   
@@ -433,7 +433,7 @@ const EcoWallet = () => {
                         <h3 className="text-2xl font-bold text-text-primary font-poppins">
                           Intrinsic Motivation
                         </h3>
-                        <p className="text-base text-text-secondary font-poppins leading-relaxed">
+                        <p className="text-base text-text-secondary font-poppins leading-relaxed w-[105%]">
                           An intervention or an awareness drive could be conducted to provide relevant information to people and persuade them to be more responsible toward the environment.
                         </p>
                       </div>
@@ -450,7 +450,7 @@ const EcoWallet = () => {
                         <h3 className="text-2xl font-bold text-text-primary font-poppins">
                           Extrinsic Motivation
                         </h3>
-                        <p className="text-base text-text-secondary font-poppins leading-relaxed">
+                        <p className="text-base text-text-secondary font-poppins leading-relaxed w-[105%]">
                           A reward or monetary incentive system to encourage them in the desired direction along with providing relevant information about stores and NGOs nearby in an accessible way.
                         </p>
                       </div>
@@ -458,7 +458,7 @@ const EcoWallet = () => {
                   </div>
 
                   {/* Decision */}
-                  <div className="bg-green-50 rounded-xl p-6 border-l-4 border-accent-green">
+                  <div className="bg-green-50 rounded-xl p-6 border-l-4 border-accent-green w-[105%]">
                     <p className="text-base text-text-secondary font-poppins leading-relaxed">
                       I decided to move forward with <span className="font-bold text-text-primary">extrinsic motivation</span> as it would directly counter the cost barrier by making sustainable options more financially appealing and accessible for a wider user base. The system would be more effective and be easier to scale.
                     </p>
@@ -466,12 +466,8 @@ const EcoWallet = () => {
                 </div>
 
                 {/* Right side - Illustration placeholder */}
-                <div className="w-full flex items-center justify-center">
-                  <div className="w-full max-w-md aspect-square bg-gray-100 rounded-2xl flex items-center justify-center shadow-lg">
-                    <div className="text-center text-gray-400 font-poppins">
-                      <img src="/images/about-02.svg" alt="" />
-                    </div>
-                  </div>
+                <div className="w-full flex items-center justify-center relative -right-20">
+                      <img src="/images/about-02.svg" alt="" className='scale-150'/>
                 </div>
               </div>
             </div>
@@ -485,7 +481,7 @@ const EcoWallet = () => {
                   Constructing the solution
                 </h2>
                 
-                <div className="space-y-6 max-w-4xl">
+                <div className="space-y-6 max-w-6xl w-[110%]">
                   <p className="text-base sm:text-lg text-text-secondary font-poppins leading-relaxed">
                     To make sustainable shopping and supporting local causes easier and more pocket-friendly, online users could be made aware of and connected with nearby businesses selling organic products and relevant non-profit organizations to make sustainable choices accessible.
                   </p>
@@ -497,128 +493,32 @@ const EcoWallet = () => {
               </div>
 
               {/* Flow diagram */}
-              <div className="flex items-center justify-center py-12">
-                <div className="w-full max-w-5xl">
-                  {/* Diagram placeholder */}
-                  <div className="relative bg-white rounded-2xl p-12 shadow-lg">
-                    <img src="/images/eco-04.svg" alt="" />
+              <div className="flex relative -left-30">
+                <div className="w-full max-w-5xl flex flex-col md:flex-row items-center justify-between gap-6">
+                  {/* Diagram placeholder - left image */}
+                  <div className="w-full md:w-1/2 flex relative left-30">
+                    <img src="/images/eco-04.svg" alt="" className="scale-90 md:scale-110 max-w-full" />
                   </div>
-                </div>
-              </div>
-            </div>
-          </section>
 
-          {/* Slide 10 - Constructing the Solution (Second Version with Ideation) */}
-          <section className="min-h-screen flex items-center justify-center bg-white px-6 sm:px-12 py-20">
-            <div className="max-w-6xl w-full space-y-12">
-              <div className="space-y-6">
-                <h2 className="text-4xl sm:text-5xl font-bold text-text-primary font-montserrat">
-                  Constructing the solution
-                </h2>
-                
-                <div className="space-y-6 max-w-4xl">
-                  <p className="text-base sm:text-lg text-text-secondary font-poppins leading-relaxed">
-                    To make sustainable shopping and supporting local causes easier and more pocket-friendly, online users could be made aware of and connected with nearby businesses selling organic products and relevant non-profit organizations to make sustainable choices accessible.
-                  </p>
-                  
-                  <p className="text-base sm:text-lg text-text-secondary font-poppins leading-relaxed">
-                    Every sustainable choice like shopping green or making a donation would be rewarded in the form of monetary benefits.
-                  </p>
-                </div>
-              </div>
+                  {/* Diagram placeholder - right image with callout text + curved arrow */}
+                  <div className="w-full md:w-1/2 flex items-center justify-end space-x-6 relative">
+                    <img src="/images/eco-06.png" alt="" className="scale-50 md:scale-[60%] max-w-full relative left-120" />
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                {/* Left side - Simplified flow diagram */}
-                <div className="bg-gray-50 rounded-2xl p-8 shadow-lg">
-                  <div className="flex items-center justify-center gap-4 flex-wrap">
-                    {/* App */}
-                    <div className="flex flex-col items-center space-y-2">
-                      <div className="w-24 h-24 rounded-full bg-text-primary flex items-center justify-center shadow-lg">
-                        <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm0 18H7V5h10v14z"/>
-                        </svg>
-                      </div>
-                      <p className="text-sm font-semibold text-text-primary font-poppins">App</p>
-                      <div className="text-xs text-center space-y-1">
-                        <p className="text-text-secondary">↑ NGOs</p>
-                        <p className="text-text-secondary">↓ Small businesses</p>
-                      </div>
-                    </div>
-
-                    <svg className="w-8 h-8 text-accent-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-
-                    {/* Users */}
-                    <div className="flex flex-col items-center space-y-2">
-                      <div className="w-24 h-24 rounded-full bg-text-primary flex items-center justify-center shadow-lg">
-                        <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
-                        </svg>
-                      </div>
-                      <p className="text-sm font-semibold text-text-primary font-poppins">Users</p>
-                    </div>
-
-                    <div className="flex flex-col gap-4">
-                      <svg className="w-8 h-8 text-accent-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    {/* Callout: text with a curved SVG arrow pointing from the image */}
+                    <div className="hidden md:flex flex-col items-start ml-4 relative">
+                      <svg className="scale-50 absolute -left-15 top-1/2 transform -translate-y-1/2" width="160" height="80" viewBox="0 0 160 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                        <defs>
+                          <marker id="ecoArrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
+                            <path d="M0,0 L10,5 L0,10 z" fill="#0C9F1A" />
+                          </marker>
+                        </defs>
+                        <path d="M150 60 C120 20 60 20 10 40" stroke="#0C9F1A" strokeWidth="3" fill="none" markerEnd="url(#ecoArrow)" />
                       </svg>
-                      <svg className="w-8 h-8 text-accent-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                      </svg>
-                    </div>
 
-                    {/* Shop & Donate */}
-                    <div className="flex flex-col gap-4">
-                      <div className="flex flex-col items-center space-y-2">
-                        <div className="w-20 h-20 rounded-full bg-text-primary flex items-center justify-center shadow-lg">
-                          <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
-                          </svg>
-                        </div>
-                        <p className="text-xs font-semibold text-text-primary font-poppins">Shop</p>
-                      </div>
-                      <div className="flex flex-col items-center space-y-2">
-                        <div className="w-20 h-20 rounded-full bg-text-primary flex items-center justify-center shadow-lg">
-                          <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                          </svg>
-                        </div>
-                        <p className="text-xs font-semibold text-text-primary font-poppins">Donate</p>
-                      </div>
+                      <p className="text-base sm:text-lg text-text-secondary font-poppins leading-relaxed w-[250%] relative -left-50 -bottom-10">
+                        Ideating on relevant features that can be a part of EcoWallet
+                      </p>
                     </div>
-
-                    <svg className="w-8 h-8 text-accent-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-
-                    {/* Benefits */}
-                    <div className="flex flex-col items-center space-y-2">
-                      <div className="w-24 h-24 rounded-full bg-text-primary flex items-center justify-center shadow-lg">
-                        <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
-                        </svg>
-                      </div>
-                      <p className="text-sm font-semibold text-text-primary font-poppins">Benefits</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Right side - Ideation sticky notes */}
-                <div className="flex flex-col items-center space-y-6">
-                  <div className="w-full aspect-square bg-gray-100 rounded-2xl flex items-center justify-center shadow-lg">
-                    <div className="text-center text-gray-400 font-poppins">
-                      <p className="text-lg font-medium">Sticky Notes Image</p>
-                      <p className="text-sm mt-2">Feature ideation brainstorm</p>
-                    </div>
-                  </div>
-                  <div className="text-center space-y-2">
-                    <svg className="w-12 h-12 text-accent-green mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M7 13l5 5m0 0l5-5m-5 5V6"/>
-                    </svg>
-                    <p className="text-base text-text-secondary font-poppins">
-                      Ideating on relevant features that can be a part of EcoWallet
-                    </p>
                   </div>
                 </div>
               </div>
