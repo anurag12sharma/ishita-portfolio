@@ -12,18 +12,18 @@ const HeroSection = () => {
               {/* Background decorative elements */}
               <div className="absolute -top-10 left-0 flex flex-col gap-4 w-full pointer-events-none">
                 <div className="w-[40%] max-w-[160px] h-7 bg-accent-yellow rounded-sm opacity-90 transition-all duration-500 hover:opacity-100 animate-slide-in-left"></div>
-                <div className="w-[40%] max-w-[160px] h-7 bg-accent-purpleLight rounded-sm opacity-90 ml-16 sm:ml-20 transition-all duration-500 hover:opacity-100 animate-slide-in-right" style={{animationDelay: '0.2s'}}></div>
+                <div className="w-[40%] max-w-[160px] h-7 bg-accent-purpleLight rounded-sm opacity-90 ml-16 sm:ml-20 transition-all duration-500 hover:opacity-100 animate-slide-in-right" style={{ animationDelay: '0.2s' }}></div>
               </div>
-              
+
               {/* Main Title */}
-              <h1 className="relative text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-semibold leading-relaxed lg:leading-[1.4] text-text-primary font-montserrat animate-slide-up tracking-tight" style={{animationDelay: '0.3s', textShadow: '0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.1)'}}>
-                Human-Computer<br/>
-                <span style={{whiteSpace: 'nowrap'}}>
+              <h1 className="relative text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-semibold leading-relaxed lg:leading-[1.4] text-text-primary font-montserrat animate-slide-up tracking-tight" style={{ animationDelay: '0.3s', textShadow: '0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.1)' }}>
+                Human-Computer<br />
+                <span style={{ whiteSpace: 'nowrap' }}>
                   <span className="relative inline-block">
                     <span className="absolute inset-x-0 bottom-[25%] top-[20%] bg-[#FFE37F] -skew-y-1 -z-10 opacity-80"></span>
                     <span className="relative">Interaction</span>
                   </span> Researcher
-                </span><br/>
+                </span><br />
                 and <span className="relative inline-block">
                   <span className="absolute inset-x-0 bottom-[25%] top-[20%] bg-[#CDB9FF] -skew-y-1 -z-10 opacity-80"></span>
                   <span className="relative">Designer</span>
@@ -32,7 +32,7 @@ const HeroSection = () => {
             </div>
 
             {/* Description */}
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal leading-relaxed text-text-light font-poppins animate-slide-up max-w-full lg:max-w-[850px]" style={{animationDelay: '0.4s'}}>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal leading-relaxed text-text-light font-poppins animate-slide-up max-w-full lg:max-w-[850px]" style={{ animationDelay: '0.4s' }}>
               <span className="text-gray-600">Hey, I am </span>
               <span className="text-[#6c3ce5] font-semibold transition-all duration-300 hover:text-[#814eff] cursor-default">Ishita Gupta</span>
               <span className="text-gray-600">, a </span>
@@ -44,24 +44,32 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content - Image Stack */}
-          <div className="relative w-full lg:w-[40%] max-w-sm lg:max-w-none animate-slide-in-right lg:-mt-32 lg:ml-16" style={{animationDelay: '0.5s'}}>
+          <div className="relative w-full lg:w-[40%] max-w-sm lg:max-w-none animate-slide-in-right lg:-mt-32 lg:ml-16" style={{ animationDelay: '0.5s' }}>
             <div className="relative w-[434px] h-[540px] max-w-full mx-auto lg:mx-0">
+              {/* Decorative Star */}
+              <div className="absolute -top-3 right-10 lg:-top-4 lg:right-[90%] w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 animate-float drop-shadow-lg z-10">
+                <img
+                  src="/images/hero-01.svg"
+                  alt="Stars"
+                  className="w-full h-full object-contain block"
+                />
+              </div>
               {/* Main Profile Image */}
               <div className="absolute inset-0 w-full h-full rounded-2xl overflow-hidden shadow-large group">
-                <img 
-                  src="/images/profilePic.png" 
-                  alt="Ishita Gupta - HCI Researcher and Designer" 
+                <img
+                  src="/images/profilePic.png"
+                  alt="Ishita Gupta - HCI Researcher and Designer"
                   className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 scale-105 block"
                 />
                 {/* Gradient overlay for depth */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
-              
+
               {/* Decorative Sunflower */}
-              <div className="absolute -bottom-3 -right-3 lg:-bottom-4 lg:-right-4 w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 animate-bounce-slow drop-shadow-lg z-10">
-                <img 
-                  src="/images/img_fxemoji_sunflower.svg" 
-                  alt="Decorative sunflower" 
+              <div className="absolute -bottom-3 -right-3 lg:-bottom-4 lg:-right-4 w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 animate-wiggle drop-shadow-lg z-10">
+                <img
+                  src="/images/img_fxemoji_sunflower.svg"
+                  alt="Decorative sunflower"
                   className="w-full h-full object-contain block"
                 />
               </div>

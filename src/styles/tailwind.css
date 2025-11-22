@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer base {
   :root {
     /* Primary Colors */
@@ -31,7 +35,7 @@
     /* Background Colors */
     --bg-main: #ffffff;
     --bg-card: #fdfdfd;
-    --bg-overlay: rgba(228, 228, 228, 0.9);
+  --bg-overlay: rgba(228, 228, 228, 0.9);
     --bg-accent: #fefefe;
 
     /* Border Colors */

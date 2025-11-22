@@ -39,11 +39,26 @@ const Header = () => {
     }
   };
 
-  const isActive = (path) => {
-    if (path === '/about') {
-      return location?.pathname === '/about';
+  const isActive = (item) => {
+    const currentPath = location?.pathname || '/';
+
+    // For About page
+    if (item.label === 'About') {
+      return currentPath === '/about';
     }
-    return location?.pathname === '/';
+
+    // For Home page (not Design or Research)
+    if (item.label === 'Home') {
+      return currentPath === '/';
+    }
+
+    // For Design and Research (scroll sections on home page)
+    // You can set this to true if you want them highlighted when on home page
+    if (item.scrollTo) {
+      return false;
+    }
+
+    return false;
   };
 
   // Dynamic header background colors based on route
@@ -99,7 +114,7 @@ const Header = () => {
           <nav className="hidden lg:flex items-center gap-[64px] animate-fade-in">
             {menuItems?.map((item, index) => (
               <div key={index} className="relative group">
-                {item?.label === 'About' && isActive('/about') ? (
+                {isActive(item) ? (
                   <div className="relative flex justify-center items-center">
                     <div className="absolute w-[60px] h-[16px] bg-accent-yellow rounded-full top-[9px] transition-all duration-300 group-hover:w-[70px]"></div>
                     <Link
@@ -133,7 +148,7 @@ const Header = () => {
             <div className="flex flex-col py-4 px-6 space-y-4">
               {menuItems?.map((item, index) => (
                 <div key={index} className="relative transform transition-all duration-300 hover:translate-x-2">
-                  {item?.label === 'About' && isActive('/about') ? (
+                  {isActive(item) ? (
                     <div className="relative flex justify-start items-center">
                       <div className="absolute w-[60px] h-[16px] bg-accent-yellow rounded-full top-[7px] transition-all duration-300"></div>
                       <Link
