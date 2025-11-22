@@ -19,41 +19,70 @@ const EcoWallet = () => {
         
         <main className="flex-grow">
           {/* Slide 1 - Title Slide */}
-          <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 to-white px-6 sm:px-12">
-            <div className="max-w-6xl w-full">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                {/* Left side - Text content */}
-                <div className="space-y-8 text-center lg:text-left">
-                  <div className="flex items-center gap-3 justify-center lg:justify-start">
-                    <img src="/images/eco-icon.svg" alt="" className='scale-50' />
-                    <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-text-primary font-montserrat">
-                      EcoWallet
-                    </h1>
-                  </div>
-                  
-                  <div className="space-y-4">
-                    <p className="text-xl sm:text-2xl md:text-3xl text-text-secondary font-poppins leading-relaxed">
-                      Making sustainability accessible and rewarding.
-                    </p>
-                    <p className="text-xl sm:text-2xl md:text-3xl text-text-secondary font-poppins leading-relaxed">
-                      Donate, shop green, and earn benefits.
-                    </p>
-                  </div>
+          {/* Heading and Description */}
+          <section className="min-h-screen relative flex items-start justify-center px-6 sm:px-12 pt-16" style={{ backgroundColor: '#D5FFE1' }}>
+            <div className="max-w-6xl w-full h-full flex flex-col justify-between">
+              <div className="flex flex-col items-center">
+                <div className="flex items-center gap-3 justify-center -mt-16">
+                  <img src="/images/eco-icon.svg" alt="" className='scale-50 -mr-6' />
+                  <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold font-montserrat" style={{ color: '#3C3C3C' }}>
+                    EcoWallet
+                  </h1>
                 </div>
+
+                <div
+                  className="-mt-12 ml-12"
+                  style={{
+                    width: '1856px',
+                    height: '139px',
+                    fontFamily: "'Montserrat', sans-serif",
+                    fontWeight: 600,
+                    fontSize: '24px',
+                    fontStyle: 'normal',
+                    letterSpacing: '0.03em',
+                    textAlign: 'center',
+                    color: 'rgba(60,60,60,0.6)',
+                    lineHeight: '1.1',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}
+                >
+                  <p style={{ margin: 0 }}>Making sustainability accessible and rewarding.</p>
+                  <p style={{ margin: 0 }}>Donate, shop green, and earn benefits.</p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-6 justify-center pb-12 mx-auto">
+                  <div className="text-center text-gray-400 font-poppins text-sm">
+                    <img src="/images/eco-01.png" alt="" className="w-52 sm:w-80" />
+                  </div>
                 
-                {/* Right side - Images placeholder */}
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="aspect-[3/4] bg-gray-100 rounded-3xl shadow-lg flex items-center justify-center">
-                    <div className="text-center text-gray-400 font-poppins text-sm">
-                      <img src="/images/eco-01.png" alt="" />
-                    </div>
+                  <div className="text-center text-gray-400 font-poppins text-sm">
+                    <img src="/images/eco-02.png" alt="" className="w-52 sm:w-80" />
                   </div>
-                  <div className="aspect-[3/4] bg-gradient-to-br from-green-100 to-green-200 rounded-3xl shadow-lg flex items-center justify-center">
-                    <div className="text-center text-gray-400 font-poppins text-sm">
-                      <img src="/images/eco-02.png" alt="" />
-                    </div>
-                  </div>
-                </div>
+              </div>
+              {/* Bottom-right date label */}
+              <div
+                className="absolute right-20 bottom-20"
+                style={{
+                  width: '419px',
+                  height: '66px',
+                  fontSize: '20px',
+                  opacity: 0.6,
+                  fontFamily: "'Montserrat', sans-serif",
+                  fontWeight: 600,
+                  lineHeight: '1.2',
+                  letterSpacing: '0.03em',
+                  textAlign: 'center',
+                  color: '#3C3C3C',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                <span>May-July 2022</span>
               </div>
             </div>
           </section>
