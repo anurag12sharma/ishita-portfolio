@@ -525,8 +525,8 @@ const EcoWallet = () => {
             </div>
           </section>
 
-          {/* Slide 11 - User Flows - Task 1: Collecting Points */}
-          <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white px-6 sm:px-12 py-20">
+          {/* Slide 10 - User Flows - Task 1: Collecting Points */}
+          <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white px-6 sm:px-12">
             <div className="max-w-7xl w-full space-y-8">
               <div className="space-y-4">
                 <h2 className="text-4xl sm:text-5xl font-bold text-text-primary font-montserrat">
@@ -539,70 +539,25 @@ const EcoWallet = () => {
 
               {/* Flow diagram placeholder */}
               <div className="bg-white rounded-2xl p-8 sm:p-12 shadow-lg">
-                <div className="w-full aspect-[16/10] bg-gray-100 rounded-xl flex items-center justify-center">
-                  <div className="text-center text-gray-400 font-poppins space-y-3 p-6">
-                    <p className="text-lg font-medium">User Flow Diagram</p>
-                    <p className="text-sm max-w-md">Task 1: Collecting Points</p>
-                    <p className="text-xs text-gray-500">
-                      Flow showing: Begin → Sign in/Sign up → Home page → Collect points → 
-                      Check available points → Donate (with NGO options) → Buy sustainable item → 
-                      Apply offer → Make purchase → Credit points
-                    </p>
-                  </div>
-                </div>
+              <img src="/images/eco-07.svg" alt="" />
               </div>
 
-              <div className="bg-green-50 rounded-xl p-6 border-l-4 border-accent-green">
-                <p className="text-base text-text-secondary font-poppins leading-relaxed">
-                  <span className="font-semibold text-text-primary">Key steps:</span> Users begin by signing in/signing up → Navigate to home page → Choose to collect points through either donating to NGOs or purchasing sustainable items → Browse and select options → Complete the transaction → Earn credit points that are automatically added to their EcoWallet balance.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Slide 12 - User Flows - Task 2: Redeeming Points */}
-          <section className="min-h-screen flex items-center justify-center bg-white px-6 sm:px-12 py-20">
-            <div className="max-w-7xl w-full space-y-8">
               <div className="space-y-4">
-                <h2 className="text-4xl sm:text-5xl font-bold text-text-primary font-montserrat">
-                  User flows
-                </h2>
                 <h3 className="text-2xl sm:text-3xl font-semibold text-text-secondary font-poppins">
                   Task 2: Redeeming points
                 </h3>
               </div>
-
               {/* Flow diagram placeholder */}
-              <div className="bg-gray-50 rounded-2xl p-8 sm:p-12 shadow-lg">
-                <div className="w-full aspect-[16/9] bg-gray-100 rounded-xl flex items-center justify-center">
-                  <div className="text-center text-gray-400 font-poppins space-y-3 p-6">
-                    <p className="text-lg font-medium">User Flow Diagram</p>
-                    <p className="text-sm max-w-md">Task 2: Redeeming Points</p>
-                    <p className="text-xs text-gray-500">
-                      Flow showing: Begin → Sign in → Enter details → Home page → Redeem points → 
-                      List of stores with best offers → Choose an offer → Copy coupon code to use the offer
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-green-50 rounded-xl p-6 border-l-4 border-accent-green">
-                  <p className="text-base text-text-secondary font-poppins leading-relaxed">
-                    <span className="font-semibold text-text-primary">Task flow:</span> Users sign in → Navigate to home page → Select "Redeem points" option → View list of stores with offers based on available credits → Choose preferred offer → Receive coupon code to apply during purchase.
-                  </p>
-                </div>
-                <div className="bg-purple-50 rounded-xl p-6 border-l-4 border-purple-400">
-                  <p className="text-base text-text-secondary font-poppins leading-relaxed">
-                    <span className="font-semibold text-text-primary">Value proposition:</span> The redemption system directly addresses the cost barrier by providing tangible monetary benefits, making sustainable shopping financially rewarding and encouraging repeated engagement.
-                  </p>
-                </div>
+              <div className="bg-white rounded-2xl p-8 sm:p-12 shadow-lg scale-75 -mt-30">
+              <img src="/images/eco-08.svg" alt="" />
               </div>
             </div>
           </section>
 
+          
+
           {/* Slide 13 - Prototyping EcoWallet - Home Screen */}
-          <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white px-6 sm:px-12 py-20">
+          <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white px-6 sm:px-12">
             <div className="max-w-6xl w-full">
               <div className="mb-12">
                 <h2 className="text-4xl sm:text-5xl font-bold text-text-primary font-montserrat">
