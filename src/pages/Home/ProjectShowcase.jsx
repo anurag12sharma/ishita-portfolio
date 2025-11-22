@@ -14,7 +14,8 @@ const ProjectShowcase = () => {
       image: '/images/img_rectangle_1356.png',
       title: 'EcoWallet: Making sustainability accessible',
       organization: 'Shiv Nadar University',
-      organizationColor: 'text-accent-greenText',
+      organizationColor: 'text-[#1A9B44]',
+      description: 'End-to-end interactive design of a platform aimed at promoting sustainable choices',
       buttonColor: 'bg-accent-green',
       chips: ['Internship', 'Mobile App', 'UX Case Study'],
       alignment: 'left',
@@ -25,7 +26,8 @@ const ProjectShowcase = () => {
       image: '/images/img_rectangle_1359.png',
       title: 'Represent Bihar: Redesigning the storytelling and listening experience',
       organization: 'Cornell Tech',
-      organizationColor: 'text-accent-brown',
+      organizationColor: 'text-[#9E733C]',
+      description: 'Redesign of the website user interface and user experience of the digital storytelling platform',
       buttonColor: 'bg-accent-brown',
       chips: ['Internship', 'Website', 'Redesign'],
       alignment: 'right',
@@ -36,7 +38,8 @@ const ProjectShowcase = () => {
       image: '/images/img_rectangle_1354.png',
       title: 'Delhi Metro: Assessing accessibility and commuter experience',
       organization: 'Independent Project',
-      organizationColor: 'text-primary-light',
+      organizationColor: 'text-[#814FFF]',
+      description: 'Analysis of the transport system through a user experience lens and subsequent observations',
       buttonColor: 'bg-primary-background',
       chips: ['Self-initiated', 'User research'],
       alignment: 'left',
@@ -119,13 +122,11 @@ const ProjectShowcase = () => {
         {/* Design Case Studies Section */}
         <section id="design" className="px-6 sm:px-8 lg:px-12 pt-20 lg:pt-24 pb-16 animate-fade-in">
           <div className="mb-16 lg:mb-20">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-text-primary font-montserrat mb-3 animate-slide-in-left">
-              <span className="inline-block w-16 h-1 bg-primary-background mr-4 align-middle"></span>
-              <span className="text-primary-background">Design Case Studies</span>
+            <h2 className="flex items-center gap-4 text-[26px] font-medium font-poppins mb-3 animate-slide-in-left leading-[48px] h-[48px] tracking-normal -ml-8 lg:-ml-20">
+              <span className="inline-block w-16 h-1 bg-primary-background mr-0 align-middle"></span>
+              <span className="text-[#673fcc]">01 \</span>
+              <span className="text-[#808080] block max-w-[380px] lg:max-w-[520px]">Design Case Studies</span>
             </h2>
-            <p className="text-base sm:text-lg text-text-muted font-poppins ml-20 animate-slide-in-left" style={{ animationDelay: '0.1s' }}>
-              Crafting meaningful experiences through research and design
-            </p>
           </div>
 
           <div className="flex flex-col gap-24 lg:gap-32">
@@ -167,18 +168,24 @@ const ProjectShowcase = () => {
                 </div>
 
                 {/* Project Details */}
-                <div className={`flex flex-col gap-5 justify-center items-start w-full lg:w-[45%] ${project?.alignment === 'right' ? 'lg:items-end lg:text-right' : ''} px-2 lg:px-4`}>
+                <div className={`flex flex-col gap-5 justify-center items-start w-full lg:w-[45%] ${project?.alignment === 'right' ? 'lg:items-end lg:text-right' : ''} px-2 lg:px-4 mt-12 lg:mt-38`}>
                   <div className="space-y-1">
-                    <p className={`text-sm font-medium uppercase tracking-wider ${project?.organizationColor} font-poppins transition-all duration-300`}>
+                    <p className={`w-[575px] h-[36px] opacity-100 font-poppins text-[24px] font-medium leading-[100%] tracking-normal mb-6 ${project?.organizationColor ? project.organizationColor : 'text-[#1A9B44]'}`}>
                       {project?.organization}
                     </p>
-                    <h3 className={`text-2xl sm:text-3xl lg:text-3xl font-semibold leading-tight text-text-primary font-montserrat ${project?.alignment === 'right' ? 'lg:text-right' : ''} transition-all duration-300 group-hover:text-primary-background`}>
+                    <h3 className={`w-[577px] h-[36px] opacity-100 font-poppins font-medium text-[24px] leading-[100%] tracking-normal text-[#666666] ${project?.alignment === 'right' ? 'lg:text-right' : ''} transition-all duration-300`}>
                       {project?.title}
                     </h3>
+
+                    {project?.description && (
+                      <p className={`w-[577px] opacity-100 font-poppins font-normal text-[20px] tracking-normal text-[#666666] ${project?.title?.includes('Represent Bihar') || project?.title?.includes('Delhi Metro') ? 'mt-9' : 'mt-6'}`} style={{ lineHeight: '22px' }}>
+                        {project.description}
+                      </p>
+                    )}
                   </div>
 
                   <ChipView
-                    className={`flex flex-wrap gap-2.5 ${project?.alignment === 'right' ? 'lg:justify-end' : 'lg:justify-start'}`}
+                    className={`flex flex-wrap gap-2.5 border-0 hover:shadow-none hover:border-0 hover:translate-y-0 hover:text-text-primary ${project?.alignment === 'right' ? 'lg:justify-end -mr-[3.5%]' : 'lg:justify-start -ml-[3.5%]'}`}
                     layout_width="auto"
                     position="relative"
                     variant="default"
@@ -188,7 +195,7 @@ const ProjectShowcase = () => {
                     {project?.chips?.map((chip, chipIndex) => (
                       <span
                         key={chipIndex}
-                        className="text-sm font-medium text-text-primary font-poppins border border-text-primary rounded-full px-4 py-2 transition-all duration-300 hover:border-primary-background hover:text-primary-background hover:shadow-md hover:-translate-y-0.5 cursor-default"
+                        className="text-sm font-medium text-text-primary font-poppins border border-text-primary rounded-md px-4 py-2 transition-all duration-300 hover:border-primary-background hover:text-primary-background hover:shadow-md hover:-translate-y-0.5 cursor-default"
                       >
                         {chip}
                       </span>
@@ -276,7 +283,7 @@ const ProjectShowcase = () => {
                           {/* Research Details */}
                           <div className="flex flex-col gap-6 lg:gap-8 justify-center items-start w-full lg:w-1/2 flex-shrink-0">
                             <div className="space-y-4 w-full">
-                              <p className="text-sm font-semibold uppercase tracking-wider text-primary-light font-poppins">
+                              <p className="text-sm font-semibold tracking-wider text-primary-light font-poppins">
                                 {research.organization}
                               </p>
                               <h3 className="text-2xl sm:text-3xl lg:text-3xl font-bold leading-tight text-text-primary font-montserrat transition-colors duration-300 group-hover:text-primary-background">
@@ -321,7 +328,7 @@ const ProjectShowcase = () => {
                         {/* Research Details */}
                         <div className="flex flex-col gap-6 lg:gap-8 justify-center items-start w-full lg:w-1/2 flex-shrink-0">
                           <div className="space-y-4 w-full">
-                            <p className="text-sm font-semibold uppercase tracking-wider text-primary-light font-poppins">
+                            <p className="text-sm font-semibold tracking-wider text-primary-light font-poppins">
                               {researchProjects[0].organization}
                             </p>
                             <h3 className="text-2xl sm:text-3xl lg:text-3xl font-bold leading-tight text-text-primary font-montserrat transition-colors duration-300 group-hover:text-primary-background">
