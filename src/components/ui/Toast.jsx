@@ -50,7 +50,7 @@ const Toast = ({ show, message, duration = 2500, onClose }) => {
       }}
     >
       <div
-        className="pointer-events-auto max-w-[440px] w-auto mx-4 flex items-center gap-3.5 px-5 py-3.5 rounded-2xl backdrop-blur-md"
+        className="pointer-events-auto max-w-[440px] w-auto mx-4 flex items-center gap-3.5 px-5 py-3.5 rounded-2xl"
         style={{
           background: 'linear-gradient(135deg, #814eff 0%, #673fcc 50%, #8b5cf6 100%)',
           boxShadow: visible

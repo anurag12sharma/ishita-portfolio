@@ -197,7 +197,7 @@ const GenderBiasResearchPage = () => {
               {/* Left side - Hindi examples with decorative background */}
               <div className="space-y-8">
                 {/* Example 1 */}
-                <div className="bg-white/70 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-stone-200">
+                <div className="bg-white/70 p-6 rounded-lg shadow-sm border border-stone-200">
                   <p className="text-red-600 font-semibold mb-2 text-lg font-poppins">
                     बॉस ने कर्मचारी को बुलाया क्योंकि वह खो गयी थी
                   </p>
@@ -213,7 +213,7 @@ const GenderBiasResearchPage = () => {
                 </div>
 
                 {/* Example 2 */}
-                <div className="bg-white/70 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-stone-200">
+                <div className="bg-white/70 p-6 rounded-lg shadow-sm border border-stone-200">
                   <p className="text-gray-700 mb-2 font-poppins">
                     "डॉक्टर ने नर्स को बुलाया क्योंकि वह देर से आया था।"
                   </p>

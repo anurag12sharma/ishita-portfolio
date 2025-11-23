@@ -80,7 +80,7 @@ const Header = () => {
 
   return (
     <header
-      className="w-full bg-header-background shadow-soft backdrop-blur-sm sticky top-0 z-50 transition-all duration-300"
+      className="w-full bg-header-background shadow-soft sticky top-0 z-50 transition-all duration-300"
       style={{
         backgroundColor: getHeaderBackground(),
         boxShadow: '0 4px 16px -4px rgba(0, 0, 0, 0.06), 0 2px 8px -2px rgba(0, 0, 0, 0.04)'
@@ -142,7 +142,7 @@ const Header = () => {
 
           {/* Mobile Navigation */}
           <nav
-            className={`${menuOpen ? 'block animate-slide-up' : 'hidden'} lg:hidden absolute top-full left-0 w-full shadow-large z-50 backdrop-blur-md`}
+            className={`${menuOpen ? 'block animate-slide-up' : 'hidden'} lg:hidden absolute top-full left-0 w-full shadow-large z-50`}
             style={{ backgroundColor: getHeaderBackground() }}
           >
             <div className="flex flex-col py-4 px-6 space-y-4">

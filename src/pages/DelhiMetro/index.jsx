@@ -18,7 +18,15 @@ const DelhiMetroPage = () => {
         
         <main className="flex-grow">
           {/* Slide 1 - Title Slide */}
-          <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 to-white px-6 sm:px-12">
+          <section className="min-h-screen flex items-center justify-center bg-linear-to-br from-orange-50 to-amber-50 px-6 sm:px-12 py-20">
+              <div className="mt-12 space-y-6 ml-24">
+                <img src="/images/rep-08.svg" alt=""/>
+              </div>
+          </section>
+          <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 to-white">
+            <div className="mt-12 space-y-6 ml-24">
+                <img src="/images/rep-08.svg" alt=""/>
+              </div>
             <div className="max-w-4xl text-center space-y-8">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-background font-poppins leading-tight">
                 Delhi Metro: An Experience
