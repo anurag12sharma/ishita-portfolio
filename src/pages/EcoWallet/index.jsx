@@ -554,12 +554,10 @@ const EcoWallet = () => {
             </div>
           </section>
 
-          
-
-          {/* Slide 13 - Prototyping EcoWallet - Home Screen */}
-          <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white px-6 sm:px-12">
+          {/* Slide 11 - Prototyping EcoWallet - Home Screen */}
+          <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white">
             <div className="max-w-6xl w-full">
-              <div className="mb-12">
+              <div className="mt-10">
                 <h2 className="text-4xl sm:text-5xl font-bold text-text-primary font-montserrat">
                   Prototyping EcoWallet
                 </h2>
@@ -567,20 +565,12 @@ const EcoWallet = () => {
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Left side - Phone mockup */}
-                <div className="flex justify-center">
-                  <div className="w-full max-w-sm aspect-[9/19] bg-gray-100 rounded-3xl shadow-2xl flex items-center justify-center p-4">
-                    <div className="text-center text-gray-400 font-poppins space-y-3">
-                      <p className="text-lg font-medium">Home Screen Mockup</p>
-                      <p className="text-sm">EcoWallet app interface</p>
-                      <p className="text-xs text-gray-500">
-                        Shows: Points tracker, Explore EcoWallet menu, Local stores, Nearby NGOs, Exclusive offers, Your wallet
-                      </p>
-                    </div>
-                  </div>
+                <div className="flex justify-center  -mt-65 -ml-60">
+                      <img src="/images/eco-09.png" alt="" className='scale-50'/>
                 </div>
 
                 {/* Right side - Feature descriptions */}
-                <div className="space-y-8">
+                <div className="space-y-8 relative left-10 bottom-35">
                   <div className="space-y-4">
                     <div className="flex items-start gap-4">
                       <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent-green/10 flex items-center justify-center">
@@ -644,16 +634,8 @@ const EcoWallet = () => {
             <div className="max-w-7xl w-full space-y-12">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Left side - Phone mockup 1 */}
-                <div className="flex justify-center">
-                  <div className="w-full max-w-sm aspect-[9/19] bg-gray-100 rounded-3xl shadow-2xl flex items-center justify-center p-4">
-                    <div className="text-center text-gray-400 font-poppins space-y-3">
-                      <p className="text-lg font-medium">Local Stores Screen</p>
-                      <p className="text-sm">Best deals & categories</p>
-                      <p className="text-xs text-gray-500">
-                        Shows: Search bar, Best deals carousel, Top rated stores, Cheapest deals, Featured stores
-                      </p>
-                    </div>
-                  </div>
+                <div className="flex justify-center scale-50 -mt-65 -ml-60">
+                      <img src="/images/eco-10.png" alt="" className='scale-100'/>
                 </div>
 
                 {/* Right side - Description */}
@@ -680,15 +662,7 @@ const EcoWallet = () => {
 
                 {/* Right side - Phone mockup 2 */}
                 <div className="flex justify-center order-1 lg:order-2">
-                  <div className="w-full max-w-sm aspect-[9/19] bg-gray-100 rounded-3xl shadow-2xl flex items-center justify-center p-4">
-                    <div className="text-center text-gray-400 font-poppins space-y-3">
-                      <p className="text-lg font-medium">Selected Stores Screen</p>
-                      <p className="text-sm">Category filtering</p>
-                      <p className="text-xs text-gray-500">
-                        Shows: Category filters (Veggies, Fashion, Bakery, etc.), Featured stores with images, Filter & sort buttons
-                      </p>
-                    </div>
-                  </div>
+                  <img src="/images/eco-11.png" alt="" className='scale-[55%]'/>
                 </div>
               </div>
             </div>
@@ -700,15 +674,7 @@ const EcoWallet = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Left side - Phone mockup 1 */}
                 <div className="flex justify-center">
-                  <div className="w-full max-w-sm aspect-[9/19] bg-gray-100 rounded-3xl shadow-2xl flex items-center justify-center p-4">
-                    <div className="text-center text-gray-400 font-poppins space-y-3">
-                      <p className="text-lg font-medium">Store Catalogue</p>
-                      <p className="text-sm">Product browsing</p>
-                      <p className="text-xs text-gray-500">
-                        Shows: Featured product card, Search bar, Product grid with images, Points display on each product
-                      </p>
-                    </div>
-                  </div>
+                  <img src="/images/eco-12.png" alt=""  className='scale-[55%]'/>
                 </div>
 
                 {/* Right side - Description */}
@@ -735,15 +701,7 @@ const EcoWallet = () => {
 
                 {/* Right side - Phone mockup 2 */}
                 <div className="flex justify-center order-1 lg:order-2">
-                  <div className="w-full max-w-sm aspect-[9/19] bg-gray-100 rounded-3xl shadow-2xl flex items-center justify-center p-4">
-                    <div className="text-center text-gray-400 font-poppins space-y-3">
-                      <p className="text-lg font-medium">Product Details</p>
-                      <p className="text-sm">Product page</p>
-                      <p className="text-xs text-gray-500">
-                        Shows: Product image, Title, Price with points, Specifications dropdown, Add to cart & Buy now buttons
-                      </p>
-                    </div>
-                  </div>
+                  <img src="/images/eco-13.png" alt=""  className='scale-[55%]'/>
                 </div>
               </div>
             </div>
@@ -755,15 +713,7 @@ const EcoWallet = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Left side - Phone mockup 1 */}
                 <div className="flex justify-center">
-                  <div className="w-full max-w-sm aspect-[9/19] bg-gray-100 rounded-3xl shadow-2xl flex items-center justify-center p-4">
-                    <div className="text-center text-gray-400 font-poppins space-y-3">
-                      <p className="text-lg font-medium">Review Order</p>
-                      <p className="text-sm">Checkout screen</p>
-                      <p className="text-xs text-gray-500">
-                        Shows: Delivery address, Expected delivery date, Redeem points section, Available coupons, Price details, Payment method, Confirm button
-                      </p>
-                    </div>
-                  </div>
+                  <img src="/images/eco-14.png" alt="" className='scale-[55%]' />
                 </div>
 
                 {/* Right side - Description */}
@@ -819,15 +769,7 @@ const EcoWallet = () => {
 
                 {/* Right side - Phone mockup 2 */}
                 <div className="flex justify-center order-1 lg:order-2">
-                  <div className="w-full max-w-sm aspect-[9/19] bg-gray-100 rounded-3xl shadow-2xl flex items-center justify-center p-4">
-                    <div className="text-center text-gray-400 font-poppins space-y-3">
-                      <p className="text-lg font-medium">My Wallet</p>
-                      <p className="text-sm">Points dashboard</p>
-                      <p className="text-xs text-gray-500">
-                        Shows: Current points (240), Best coupon recommendation, Points summary by store, Timeline view
-                      </p>
-                    </div>
-                  </div>
+                  <img src="/images/eco-15.png" alt="" className='scale-[55%]' />
                 </div>
               </div>
             </div>
@@ -858,8 +800,7 @@ const EcoWallet = () => {
                   <div className="flex flex-col items-center lg:items-end space-y-6">
                     <div className="w-64 h-64 bg-gray-100 rounded-2xl shadow-lg flex items-center justify-center">
                       <div className="text-center text-gray-400 font-poppins">
-                        <p className="text-sm">User Testing Photo</p>
-                        <p className="text-xs mt-2">Person using app</p>
+                        <img src="/images/eco-16.png" alt="" />
                       </div>
                     </div>
                     <div className="max-w-md">
@@ -880,12 +821,11 @@ const EcoWallet = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="w-64 h-64 bg-gray-100 rounded-2xl shadow-lg flex items-center justify-center">
-                      <div className="text-center text-gray-400 font-poppins">
-                        <p className="text-sm">User Testing Photo</p>
-                        <p className="text-xs mt-2">Person reviewing app</p>
-                      </div>
-                    </div>
+                    {/* <div className="w-64 h-64 bg-gray-100 rounded-2xl shadow-lg flex items-center justify-center"> */}
+                      {/* <div className="text-center text-gray-400 font-poppins"> */}
+                        <img src="/images/eco-17.png" alt="" className='w-80 h-64'/>
+                      {/* </div> */}
+                    {/* </div> */}
                   </div>
                 </div>
               </div>
