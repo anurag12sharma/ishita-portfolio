@@ -161,7 +161,7 @@ const ProjectShowcase = () => {
                       position="relative"
                       variant="primary"
                       size="medium"
-                      className="shadow-large backdrop-blur-sm hover:scale-105 active:scale-95 transition-transform duration-200"
+                      className="shadow-large hover:scale-105 active:scale-95 transition-transform duration-200"
                       onClick={() => project?.route && navigate(project.route)}
                     />
                   </div>
