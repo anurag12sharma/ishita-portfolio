@@ -5,7 +5,6 @@ import Footer from '../../components/common/Footer';
 import PersonalIntro from './PersonalIntro';
 import CoreValues from './CoreValues';
 import FunFacts from './FunFacts';
-import ContactSection from './ContactSection';
 
 const About = () => {
   return (
@@ -24,7 +23,6 @@ const About = () => {
           <PersonalIntro />
           <CoreValues />
           <FunFacts />
-          <ContactSection />
         </main>
 
         <Footer />

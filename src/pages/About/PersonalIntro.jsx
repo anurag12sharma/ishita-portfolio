@@ -6,7 +6,13 @@ const PersonalIntro = () => {
     { src: "/images/about-02.svg", alt: "Character illustration 2" },
     { src: "/images/about-03.svg", alt: "Character illustration 3" },
     { src: "/images/about-04.svg", alt: "Character illustration 4" },
-    { src: "/images/about-05.svg", alt: "Character illustration 5" }
+    { src: "/images/about-05.svg", alt: "Character illustration 5" },
+    { src: "/images/about-01.svg", alt: "Character illustration 1" },
+    { src: "/images/about-02.svg", alt: "Character illustration 2" },
+    { src: "/images/about-03.svg", alt: "Character illustration 3" },
+    { src: "/images/about-04.svg", alt: "Character illustration 4" },
+    { src: "/images/about-05.svg", alt: "Character illustration 5" },
+    
   ];
 
   return (
@@ -72,45 +78,18 @@ const PersonalIntro = () => {
               <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
 
               <div className="overflow-hidden rounded-2xl">
-                <div className="flex gap-6 animate-scroll hover:animation-play-state-paused">
-                  {/* First set */}
+                <div className="flex gap-6 animate-scroll">
                   <div className="flex gap-6 flex-shrink-0">
                     {illustrations.map((img, index) => (
                       <div
                         key={`first-${index}`}
-                        className="group relative flex-shrink-0 w-[300px] sm:w-[340px] md:w-[360px] rounded-2xl overflow-hidden shadow-medium hover:shadow-hover transition-all duration-500 hover:scale-105 cursor-pointer bg-white"
+                        className="group relative flex-shrink-0 w-[300px] sm:w-[340px] md:w-[360px] rounded-2xl overflow-hidden shadow-medium transition-all duration-500 cursor-default bg-white"
                       >
-                        {/* Gradient overlay on hover */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-purple-600/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-
-                        {/* Image */}
-                        <div className="relative h-[320px] sm:h-[340px] md:h-[360px] overflow-hidden bg-gradient-to-br from-purple-50 to-blue-50">
                           <img
                             src={img.src}
                             alt={img.alt}
-                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            className="w-full h-full object-cover transition-transform duration-700"
                           />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Duplicate set for seamless loop */}
-                  <div className="flex gap-6 flex-shrink-0">
-                    {illustrations.map((img, index) => (
-                      <div
-                        key={`second-${index}`}
-                        className="group relative flex-shrink-0 w-[300px] sm:w-[340px] md:w-[360px] rounded-2xl overflow-hidden shadow-medium hover:shadow-hover transition-all duration-500 hover:scale-105 cursor-pointer bg-white"
-                      >
-                        <div className="absolute inset-0 bg-gradient-to-t from-purple-600/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-
-                        <div className="relative h-[320px] sm:h-[340px] md:h-[360px] overflow-hidden bg-gradient-to-br from-purple-50 to-blue-50">
-                          <img
-                            src={img.src}
-                            alt={img.alt}
-                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                          />
-                        </div>
                       </div>
                     ))}
                   </div>

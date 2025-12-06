@@ -14,7 +14,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="w-full relative overflow-visible pt-20">
+    <footer className="w-full relative overflow-visible pt-72">
       {/* Background Text */}
       <h1
         className="select-none pointer-events-none text-center"
