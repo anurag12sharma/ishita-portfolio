@@ -210,87 +210,9 @@ const EcoWallet = () => {
           </section>
 
           {/* Slide 5 - Unpacking User Eco-Behaviour */}
-          <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white px-6 sm:px-12 py-20">
-            <div className="max-w-6xl w-full" style={{ color: '#000000B2' }}>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                {/* Left side - Content */}
-                <div className="space-y-12">
-                  <div className="space-y-6 w-[120%]">
-                    <h2 className="text-4xl sm:text-5xl font-bold text-text-primary font-montserrat" style={{ color: '#3C3C3C' }}>
-                      Unpacking user eco-behaviour
-                    </h2>
-                    <p className="text-base sm:text-lg text-text-secondary font-poppins leading-relaxed">
-                      To gain a deeper understanding of user motivations, behaviours, and pain points, I conducted a mixed-methods user research comprising a <span className="font-semibold text-text-primary">survey of 45 participants</span> and <span className="font-semibold text-text-primary">one-on-one interviews</span> with <span className="font-semibold text-text-primary">15 NGOs and local small business owners</span>.
-                    </p>
-                  </div>
-                  
-                  {/* Research questions */}
-                  <div className="space-y-6">
-                    <h3 className="text-2xl font-semibold text-text-primary font-poppins" style={{ color: '#3C3C3C' }}>
-                      Research questions for the survey
-                    </h3>
-                    <div className="flex flex-col md:flex-row gap-4 w-[210%] max-w-[230%]">
-                      <div className="border-2 border-[#0C9F1A] rounded-2xl p-4 flex-1">
-                        <p className="text-base text-text-secondary font-poppins">
-                          How far people are willing to go to contribute toward sustainability.
-                        </p>
-                      </div>
-                      <div className="border-2 border-[#0C9F1A] rounded-2xl p-4 flex-1">
-                        <p className="text-base text-text-secondary font-poppins">
-                          Are people motivated to shop sustainably and support small businesses.
-                        </p>
-                      </div>
-                      <div className="border-2 border-[#0C9F1A] rounded-2xl p-4 flex-1">
-                        <p className="text-base text-text-secondary font-poppins">
-                          Finding if people are motivated to reuse, recycle, donate and support NGOs.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Survey insights */}
-                  <div className="space-y-6">
-                    <h3 className="text-2xl font-semibold text-text-primary font-poppins" style={{ color: '#3C3C3C' }}>
-                      Survey data Insights
-                    </h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-[220%] max-w-[200%]">
-                      <div className="space-y-2">
-                        <p className="text-4xl sm:text-5xl font-poppins" style={{ width: '785px', height: '116px', opacity: 1, fontFamily: "'Poppins', sans-serif", fontWeight: 500, lineHeight: '98px', letterSpacing: '0.01em', color: '#0C9F1A', margin: 0 }}>
-                          59.5%
-                        </p>
-                        <p className="text-sm text-text-secondary font-poppins max-w-[60%] -mt-6">
-                          people are not motivated to go the extra mile
-                        </p>
-                      </div>
-                      <div className="space-y-2">
-                        <p className="text-4xl sm:text-5xl font-poppins" style={{ width: '785px', height: '116px', opacity: 1, fontFamily: "'Poppins', sans-serif", fontWeight: 500, lineHeight: '98px', letterSpacing: '0.01em', color: '#0C9F1A', margin: 0 }}>
-                          34.2%
-                        </p>
-                        <p className="text-sm text-text-secondary font-poppins max-w-[60%] -mt-6">
-                          people are unaware about ways to recycle and donate
-                        </p>
-                      </div>
-                      <div className="space-y-2">
-                        <p className="text-4xl sm:text-5xl font-poppins" style={{ width: '785px', height: '116px', opacity: 1, fontFamily: "'Poppins', sans-serif", fontWeight: 500, lineHeight: '98px', letterSpacing: '0.01em', color: '#0C9F1A', margin: 0 }}>
-                          23.7%
-                        </p>
-                        <p className="text-sm text-text-secondary font-poppins max-w-[60%] -mt-6">
-                          people are aware about climate change and make eco-friendly choices
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Right side - Illustration placeholder */}
-                <div className="w-full flex items-center justify-center lg:justify-end">
-                    <div className="text-center text-gray-400 font-poppins">
-                      <img src="/images/about-03.svg" alt="" />
-                    </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <div>
+            <img src="./public/images/eco.svg" alt="" />
+          </div>
 
           {/* Slide 6 - Interview Framework */}
           <section className="min-h-screen flex items-center justify-center bg-white px-6 sm:px-12 py-10">
