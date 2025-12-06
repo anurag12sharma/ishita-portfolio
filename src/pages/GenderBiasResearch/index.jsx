@@ -18,9 +18,12 @@ const GenderBiasResearchPage = () => {
 
         <main>
           {/* Slide 1: Title Slide */}
-          <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-stone-100 via-amber-50 to-stone-50 px-8 lg:px-16">
+          <div>
+            <img src="./public/images/gender-11.svg" alt="" />
+          </div>
+          <section className="h-screen flex items-center justify-center bg-[#FCF7E9] -mt-6">
             <div className="max-w-6xl w-full">
-              <p className="text-sm sm:text-base text-stone-500 font-poppins mb-8 tracking-wide">
+              <p className="text-base sm:text-lg text-stone-500 font-poppins font-semibold mb-8 tracking-wide leading-relaxed py-3">
                 23 JUNE 2025
               </p>
 
@@ -55,27 +58,24 @@ const GenderBiasResearchPage = () => {
           </section>
 
           {/* Slide 2: Introduction */}
-          <section className="min-h-screen flex items-center bg-white px-8 lg:px-16">
-            <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left side - Image placeholder with artistic background */}
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-stone-200/40 via-amber-100/30 to-transparent rounded-lg"></div>
-                <div className="relative bg-stone-100/50 rounded-lg p-8 aspect-square flex items-center justify-center">
-                  <div className="text-center text-stone-400">
-                    <svg className="w-32 h-32 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-sm font-poppins">Artistic illustration placeholder</p>
-                  </div>
+          <section className="min-h-screen flex items-center bg-[#FCF7E9]">
+            <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Left side (with background image) */}
+              <div
+                className="relative bg-cover bg-center bg-no-repeat p-8 min-h-screen h-full flex items-center"
+                style={{ backgroundImage: "url('/images/gender-01.png')" }}
+              >
+                <div className="absolute">
+                  <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 font-montserrat mb-8 leading-tight">
+                    Introduction
+                  </h2>
+
+                  <div className="w-24 h-1 bg-red-600"></div>
                 </div>
               </div>
 
               {/* Right side - Content */}
               <div>
-                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 font-montserrat mb-8 leading-tight">
-                  Introduction
-                </h2>
-                <div className="w-24 h-1 bg-red-600 mb-8"></div>
 
                 <div className="space-y-6 text-base sm:text-lg text-gray-700 font-poppins leading-relaxed">
                   <p>
@@ -99,21 +99,19 @@ const GenderBiasResearchPage = () => {
           </section>
 
           {/* Slide 3: Related Work */}
-          <section className="min-h-screen flex items-center bg-gradient-to-br from-stone-50 via-amber-50/30 to-stone-50 px-8 lg:px-16">
-            <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left side - Title with decorative background */}
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-red-100/20 via-amber-100/30 to-transparent rounded-lg"></div>
-                <div className="relative p-8">
-                  <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 font-montserrat leading-tight">
+          <section className="min-h-screen flex items-center bg-[#FCF7E9]">
+            <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Left side (with background image) */}
+              <div
+                className="relative bg-cover bg-center bg-no-repeat p-8 min-h-screen h-full flex items-center"
+                style={{ backgroundImage: "url('/images/gender-02.png')" }}
+              >
+                <div className="absolute">
+                  <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 font-montserrat mb-8 leading-tight">
                     Related Work
                   </h2>
-                  <div className="w-24 h-1 bg-red-600 mt-6"></div>
 
-                  {/* Decorative Hindi text watermark */}
-                  <div className="mt-12 text-8xl text-red-100 font-bold opacity-40 select-none">
-                    अाी
-                  </div>
+                  <div className="w-24 h-1 bg-red-600"></div>
                 </div>
               </div>
 
@@ -138,33 +136,21 @@ const GenderBiasResearchPage = () => {
             </div>
           </section>
 
+
           {/* Slide 4: Methods - Existing Dataset */}
-          <section className="min-h-screen flex items-center bg-white px-8 lg:px-16">
-            <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left side - Title with decorative elements */}
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-stone-100/50 via-amber-50/30 to-transparent rounded-lg"></div>
-                <div className="relative p-8">
-                  <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 font-montserrat leading-tight">
+          <section className="min-h-screen w-screen flex items-center bg-[#FCF7E9]">
+            <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Left side (with background image) */}
+              <div
+                className="relative bg-cover bg-center bg-no-repeat p-8 min-h-screen h-full flex items-center"
+                style={{ backgroundImage: "url('/images/gender-03.png')" }}
+              >
+                <div className="absolute">
+                  <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 font-montserrat mb-8 leading-tight">
                     Methods
                   </h2>
-                  <div className="w-24 h-1 bg-red-600 mt-6"></div>
 
-                  {/* Decorative code-like background */}
-                  <div className="mt-12 space-y-2 text-xs text-stone-300 font-mono opacity-50 select-none">
-                    <div className="flex gap-2">
-                      <div className="w-2 h-2 bg-stone-300 rounded-full"></div>
-                      <div className="w-32 h-2 bg-stone-300 rounded"></div>
-                    </div>
-                    <div className="flex gap-2 ml-4">
-                      <div className="w-2 h-2 bg-stone-300 rounded-full"></div>
-                      <div className="w-24 h-2 bg-stone-300 rounded"></div>
-                    </div>
-                    <div className="flex gap-2">
-                      <div className="w-2 h-2 bg-stone-300 rounded-full"></div>
-                      <div className="w-40 h-2 bg-stone-300 rounded"></div>
-                    </div>
-                  </div>
+                  <div className="w-24 h-1 bg-red-600"></div>
                 </div>
               </div>
 
@@ -191,8 +177,9 @@ const GenderBiasResearchPage = () => {
             </div>
           </section>
 
+
           {/* Slide 5: Dataset Design */}
-          <section className="min-h-screen flex items-center bg-gradient-to-br from-amber-50 via-stone-50 to-yellow-50 px-8 lg:px-16">
+          <section className="min-h-screen flex items-center bg-[#FCF7E9] px-8 lg:px-16">
             <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left side - Hindi examples with decorative background */}
               <div className="space-y-8">
@@ -257,83 +244,24 @@ const GenderBiasResearchPage = () => {
           </section>
 
           {/* Slide 6: Understanding the Datasets */}
-          <section className="min-h-screen flex items-center bg-white px-8 lg:px-16">
-            <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left side - Decorative text background */}
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-stone-50 via-amber-50/20 to-transparent rounded-lg"></div>
-                <div className="relative p-8 space-y-4 text-stone-200 text-6xl sm:text-7xl font-bold opacity-30 select-none">
-                  <div>FM</div>
-                  <div className="ml-8">MM</div>
-                  <div>42</div>
-                  <div className="ml-12">58</div>
-                </div>
-              </div>
-
-              {/* Right side - Content */}
-              <div>
-                <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 font-montserrat mb-8 leading-tight">
-                  UNDERSTANDING THE DATASETS
-                </h2>
-
-                <div className="space-y-6 text-base sm:text-lg text-gray-700 font-poppins leading-relaxed">
-                  <p>
-                    • Occupations include terms directly adopted from English (<span className="text-red-600 font-semibold">'Doctor', 'Teacher'</span>) and those with neutral Hindi translations (<span className="text-red-600 font-semibold">'Vakil' - Lawyer</span>) to ensure ambiguity.
-                  </p>
-
-                  <p>
-                    • The dataset features two types of occupation pairs:
-                  </p>
-
-                  <div className="ml-6 space-y-4">
-                    <p>
-                      • <span className="font-semibold text-gray-900">FM Pairs (42 queries):</span> Occupations with <span className="text-red-600 font-semibold">contrasting gender stereotypes</span>, like 'doctor-nurse' (male-female).
-                    </p>
-
-                    <p>
-                      • <span className="font-semibold text-gray-900">MM Pairs (58 queries):</span> Occupations where both are <span className="text-red-600 font-semibold">stereotyped similarly</span>, like 'boss-employee' (both typically male).
-                    </p>
-                  </div>
-
-                  <p>
-                    • The <span className="text-red-600 font-semibold">HEAStereo-50</span> dataset similarly contains 28 MM and 22 FM queries.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+          <div>
+            <img src="./public/images/gender-04.svg" alt="" />
+          </div>
 
           {/* Slide 7: Results - Analysis Protocol */}
-          <section className="min-h-screen flex items-center bg-gradient-to-br from-stone-50 via-yellow-50 to-amber-50 px-8 lg:px-16">
-            <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left side - Decorative "Results" with colorful blocks */}
-              <div className="relative">
-                <div className="space-y-4">
-                  {/* Decorative colored blocks */}
-                  <div className="flex gap-2">
-                    <div className="w-32 h-20 bg-yellow-200 rounded-lg"></div>
-                    <div className="w-32 h-20 bg-red-200 rounded-lg"></div>
-                    <div className="w-32 h-20 bg-blue-200 rounded-lg"></div>
-                  </div>
-                  <div className="flex gap-2">
-                    <div className="w-32 h-20 bg-yellow-100 rounded-lg"></div>
-                    <div className="w-48 h-20 bg-red-100 rounded-lg"></div>
-                    <div className="w-24 h-20 bg-cyan-100 rounded-lg"></div>
-                  </div>
+          <section className="min-h-screen w-screen flex items-center bg-[#FCF7E9]">
+            <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Left side (with background image) */}
+              <div
+                className="relative bg-contain bg-left bg-no-repeat min-h-screen flex items-center justify-around"
+                style={{ backgroundImage: "url('/images/gender-05.png')" }}
+              >
+                <div className="absolute">
+                  <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 font-montserrat mb-8 leading-tight">
+                    Results
+                  </h2>
 
-                  <div className="bg-gradient-to-r from-yellow-100 via-red-100 to-blue-100 p-8 rounded-lg mt-8">
-                    <h2 className="text-6xl sm:text-7xl font-bold text-gray-900 font-montserrat leading-tight">
-                      Results
-                    </h2>
-                    <div className="w-24 h-1 bg-red-600 mt-4"></div>
-                  </div>
-
-                  <div className="flex gap-2">
-                    <div className="w-40 h-20 bg-yellow-200 rounded-lg"></div>
-                    <div className="w-32 h-20 bg-red-200 rounded-lg"></div>
-                  </div>
-
-                  <div className="w-48 h-24 bg-gradient-to-r from-yellow-100 to-cyan-100 rounded-lg"></div>
+                  <div className="w-24 h-1 bg-red-600"></div>
                 </div>
               </div>
 
@@ -361,51 +289,13 @@ const GenderBiasResearchPage = () => {
           </section>
 
           {/* Slide 8: Hindi Queries - Findings (Chart 1) */}
-          <section className="min-h-screen flex items-center bg-white px-8 lg:px-16">
+          <section className="min-h-screen flex items-center bg-[#FCF7E9] px-8 lg:px-16">
             <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left side - Chart placeholder */}
               <div className="relative">
-                <div className="bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl p-8 shadow-lg">
+                <div className="bg-[#67378D] rounded-2xl p-8 shadow-lg">
                   <div className="bg-white rounded-lg p-6">
-                    {/* Chart title */}
-                    <p className="text-xs text-gray-600 text-center mb-4 font-poppins">
-                      Variation of Bias (Unbiased, Biased) in GPT-4o and Claude 3 Sonnet Models
-                    </p>
-
-                    {/* Bar chart placeholder */}
-                    <div className="flex items-end justify-around h-64 border-l-2 border-b-2 border-gray-300">
-                      {/* GPT-4o bars */}
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="flex gap-1 items-end">
-                          <div className="w-16 bg-green-400 rounded-t" style={{ height: '60px' }}></div>
-                          <div className="w-16 bg-red-400 rounded-t" style={{ height: '220px' }}></div>
-                        </div>
-                        <p className="text-xs text-gray-700 font-poppins">GPT-4o</p>
-                      </div>
-
-                      {/* Claude 3 Sonnet bars */}
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="flex gap-1 items-end">
-                          <div className="w-16 bg-green-400 rounded-t" style={{ height: '160px' }}></div>
-                          <div className="w-16 bg-red-400 rounded-t" style={{ height: '170px' }}></div>
-                        </div>
-                        <p className="text-xs text-gray-700 font-poppins">Claude 3 Sonnet</p>
-                      </div>
-                    </div>
-
-                    {/* Legend */}
-                    <div className="flex justify-center gap-6 mt-4">
-                      <div className="flex items-center gap-2">
-                        <div className="w-4 h-4 bg-green-400 rounded"></div>
-                        <span className="text-xs text-gray-700 font-poppins">Unbiased</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <div className="w-4 h-4 bg-red-400 rounded"></div>
-                        <span className="text-xs text-gray-700 font-poppins">Biased</span>
-                      </div>
-                    </div>
-
-                    <p className="text-center text-xs text-gray-600 mt-4 font-poppins">Models</p>
+                    <img src="./public/images/gender-06.png" alt="" />
                   </div>
 
                   <p className="text-white text-sm text-center mt-4 font-poppins font-semibold">
@@ -434,51 +324,13 @@ const GenderBiasResearchPage = () => {
           </section>
 
           {/* Slide 9: Hindi Queries - Findings (Chart 2) */}
-          <section className="min-h-screen flex items-center bg-gradient-to-br from-amber-50 via-stone-50 to-yellow-50 px-8 lg:px-16">
+          <section className="min-h-screen flex items-center bg-[#FCF7E9] px-8 lg:px-16">
             <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left side - Chart placeholder */}
               <div className="relative">
-                <div className="bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl p-8 shadow-lg">
+                <div className="bg-[#67378D] rounded-2xl p-8 shadow-lg">
                   <div className="bg-white rounded-lg p-6">
-                    {/* Chart title */}
-                    <p className="text-xs text-gray-600 text-center mb-4 font-poppins">
-                      Variation of Bias (Unbiased, Biased) in GPT-4o and Claude 3 Sonnet Models
-                    </p>
-
-                    {/* Bar chart placeholder */}
-                    <div className="flex items-end justify-around h-64 border-l-2 border-b-2 border-gray-300">
-                      {/* GPT-4o bars */}
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="flex gap-1 items-end">
-                          <div className="w-16 bg-green-400 rounded-t" style={{ height: '60px' }}></div>
-                          <div className="w-16 bg-red-400 rounded-t" style={{ height: '220px' }}></div>
-                        </div>
-                        <p className="text-xs text-gray-700 font-poppins">GPT-4o</p>
-                      </div>
-
-                      {/* Claude 3 Sonnet bars */}
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="flex gap-1 items-end">
-                          <div className="w-16 bg-green-400 rounded-t" style={{ height: '150px' }}></div>
-                          <div className="w-16 bg-red-400 rounded-t" style={{ height: '165px' }}></div>
-                        </div>
-                        <p className="text-xs text-gray-700 font-poppins">Claude 3 Sonnet</p>
-                      </div>
-                    </div>
-
-                    {/* Legend */}
-                    <div className="flex justify-center gap-6 mt-4">
-                      <div className="flex items-center gap-2">
-                        <div className="w-4 h-4 bg-green-400 rounded"></div>
-                        <span className="text-xs text-gray-700 font-poppins">Unbiased</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <div className="w-4 h-4 bg-red-400 rounded"></div>
-                        <span className="text-xs text-gray-700 font-poppins">Biased</span>
-                      </div>
-                    </div>
-
-                    <p className="text-center text-xs text-gray-600 mt-4 font-poppins">Models</p>
+                    <img src="./public/images/gender-06.png" alt="" />
                   </div>
 
                   <p className="text-white text-sm text-center mt-4 font-poppins font-semibold">
@@ -507,18 +359,13 @@ const GenderBiasResearchPage = () => {
           </section>
 
           {/* Slide 10: Anglicized Queries */}
-          <section className="min-h-screen flex items-center bg-white px-8 lg:px-16">
+          <section className="min-h-screen flex items-center bg-[#FCF7E9] px-8 lg:px-16">
             <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left side - Chart placeholder */}
               <div className="relative">
-                <div className="bg-gradient-to-br from-green-500 to-green-600 rounded-2xl p-8 shadow-lg">
-                  <div className="bg-white rounded-lg p-6 aspect-video flex items-center justify-center">
-                    <div className="text-center text-gray-400">
-                      <svg className="w-24 h-24 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                      </svg>
-                      <p className="text-sm font-poppins">Chart: Bias Variation in responses generated by GPT4o on HEAStereo-50 dataset</p>
-                    </div>
+                <div className="bg-[#0E8E51] rounded-2xl p-8 shadow-lg">
+                  <div className="bg-white rounded-lg p-6">
+                    <img src="./public/images/gender-07.png" alt="" />
                   </div>
 
                   <p className="text-white text-sm text-center mt-4 font-poppins font-semibold">
@@ -547,23 +394,17 @@ const GenderBiasResearchPage = () => {
           </section>
 
           {/* Slide 11: English Queries - Comparison (1) */}
-          <section className="min-h-screen flex items-center bg-gradient-to-br from-stone-50 via-amber-50 to-yellow-50 px-8 lg:px-16">
+          <section className="min-h-screen flex items-center bg-[#FCF7E9] px-8 lg:px-16">
             <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left side - Chart placeholder */}
               <div className="relative">
-                <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-8 shadow-lg">
-                  <div className="bg-white rounded-lg p-6 aspect-video flex items-center justify-center">
-                    <div className="text-center text-gray-400">
-                      <svg className="w-24 h-24 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                      </svg>
-                      <p className="text-sm font-poppins">Chart: Variation in bias across categories of Hindi and English Queries</p>
-                    </div>
+                <div className="bg-[#0E638E] rounded-2xl p-8 shadow-lg">
+                  <div className="bg-white rounded-lg p-6">
+                    <img src="./public/images/gender-08.png" alt="" />
                   </div>
 
                   <p className="text-white text-sm text-center mt-4 font-poppins font-semibold">
-                    Variation in bias across categories of Hindi and English Queries
-                  </p>
+                    Variation in bias across categories of Hindi and English Queries                  </p>
                 </div>
               </div>
 
@@ -587,23 +428,17 @@ const GenderBiasResearchPage = () => {
           </section>
 
           {/* Slide 12: English Queries - Comparison (2) */}
-          <section className="min-h-screen flex items-center bg-white px-8 lg:px-16">
+          <section className="min-h-screen flex items-center bg-[#FCF7E9] px-8 lg:px-16">
             <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left side - Chart placeholder */}
               <div className="relative">
-                <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-8 shadow-lg">
-                  <div className="bg-white rounded-lg p-6 aspect-video flex items-center justify-center">
-                    <div className="text-center text-gray-400">
-                      <svg className="w-24 h-24 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                      </svg>
-                      <p className="text-sm font-poppins">Chart: Variation in bias across categories of Hindi and English Queries</p>
-                    </div>
+                <div className="bg-[#0E638E] rounded-2xl p-8 shadow-lg">
+                  <div className="bg-white rounded-lg p-6">
+                    <img src="./public/images/gender-08.png" alt="" />
                   </div>
 
                   <p className="text-white text-sm text-center mt-4 font-poppins font-semibold">
-                    Variation in bias across categories of Hindi and English Queries
-                  </p>
+                    Variation in bias across categories of Hindi and English Queries                  </p>
                 </div>
               </div>
 
@@ -627,26 +462,19 @@ const GenderBiasResearchPage = () => {
           </section>
 
           {/* Slide 13: Discussion */}
-          <section className="min-h-screen flex items-center bg-gradient-to-br from-amber-50 via-stone-50 to-yellow-50 px-8 lg:px-16">
-            <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left side - Decorative background with blurred image effect */}
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-stone-200/40 via-amber-100/30 to-transparent rounded-lg"></div>
-                <div className="relative bg-stone-100/50 rounded-lg p-12">
-                  <h2 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-gray-900 font-montserrat leading-tight">
+          <section className="min-h-screen w-screen flex items-center bg-[#FCF7E9]">
+            <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Left side (with background image) */}
+              <div
+                className="relative bg-contain bg-left bg-no-repeat min-h-screen flex items-center justify-around"
+                style={{ backgroundImage: "url('/images/gender-09.png')" }}
+              >
+                <div className="absolute">
+                  <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 font-montserrat mb-8 leading-tight">
                     Discussion
                   </h2>
-                  <div className="w-32 h-1 bg-red-600 mt-6"></div>
 
-                  {/* Decorative colored blocks suggesting blurred background */}
-                  <div className="mt-12 grid grid-cols-3 gap-2 opacity-20">
-                    <div className="h-20 bg-yellow-200 rounded"></div>
-                    <div className="h-20 bg-stone-200 rounded"></div>
-                    <div className="h-20 bg-amber-200 rounded"></div>
-                    <div className="h-20 bg-red-200 rounded"></div>
-                    <div className="h-20 bg-stone-300 rounded"></div>
-                    <div className="h-20 bg-yellow-100 rounded"></div>
-                  </div>
+                  <div className="w-24 h-1 bg-red-600"></div>
                 </div>
               </div>
 
@@ -671,25 +499,20 @@ const GenderBiasResearchPage = () => {
             </div>
           </section>
 
-          {/* Slide 14: Limitations */}
-          <section className="min-h-screen flex items-center bg-white px-8 lg:px-16">
-            <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left side - Decorative background */}
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-stone-100/40 via-amber-50/20 to-transparent rounded-lg"></div>
-                <div className="relative bg-stone-50/70 rounded-lg p-12">
-                  <h2 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-gray-900 font-montserrat leading-tight">
+          {/* Slide 13: Limitations */}
+          <section className="min-h-screen w-screen flex items-center bg-[#FCF7E9]">
+            <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Left side (with background image) */}
+              <div
+                className="relative bg-contain bg-left bg-no-repeat min-h-screen flex items-center justify-around"
+                style={{ backgroundImage: "url('/images/gender-10.png')" }}
+              >
+                <div className="absolute">
+                  <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 font-montserrat mb-8 leading-tight">
                     Limitations
                   </h2>
-                  <div className="w-32 h-1 bg-red-600 mt-6"></div>
 
-                  {/* Decorative abstract shapes */}
-                  <div className="mt-12 space-y-4 opacity-10">
-                    <div className="w-full h-3 bg-gray-300 rounded"></div>
-                    <div className="w-3/4 h-3 bg-gray-300 rounded ml-4"></div>
-                    <div className="w-5/6 h-3 bg-gray-300 rounded"></div>
-                    <div className="w-2/3 h-3 bg-gray-300 rounded ml-8"></div>
-                  </div>
+                  <div className="w-24 h-1 bg-red-600"></div>
                 </div>
               </div>
 
@@ -711,7 +534,7 @@ const GenderBiasResearchPage = () => {
           </section>
 
           {/* Slide 15: Thank You */}
-          <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-stone-100 via-amber-50 to-stone-50 px-8 lg:px-16">
+          <section className="min-h-screen flex items-center justify-center bg-[#FCF7E9] px-8 lg:px-16">
             <div className="max-w-6xl w-full text-center">
               <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-gray-900 font-montserrat leading-tight">
                 Thank you!
