@@ -19,7 +19,7 @@ const DelhiMetroPage = () => {
         <main>
           {/* Slide 1 - Title Slide */}
           <div className='-mt-[10%] w-full overflow-hidden'>
-            <img className="w-full block" src="./public/images/delhi-01.svg" alt="Delhi Metro Accessibility Study Title Slide" />
+            <img className="w-full block" src="./images/delhi-01.svg" alt="Delhi Metro Accessibility Study Title Slide" />
           </div>
 
           {/* Additional slides can be added here following the same pattern */}

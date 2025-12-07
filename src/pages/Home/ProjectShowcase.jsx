@@ -226,7 +226,7 @@ const ProjectShowcase = () => {
               aria-label="Previous research project"
             >
               <svg
-                className="w-6 h-6 text-secondary-dark group-hover:text-white transform -rotate-90 transition-all duration-300"
+                className="w-6 h-6 text-secondary-dark transform -rotate-90 transition-all duration-300"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -243,7 +243,7 @@ const ProjectShowcase = () => {
               aria-label="Next research project"
             >
               <svg
-                className="w-6 h-6 text-secondary-dark group-hover:text-white transform rotate-90 transition-all duration-300"
+                className="w-6 h-6 text-secondary-dark transform rotate-90 transition-all duration-300"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

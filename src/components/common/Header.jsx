@@ -10,6 +10,7 @@ const Header = () => {
     { label: 'Home', path: '/' },
     { label: 'Design', path: '/', scrollTo: 'design' },
     { label: 'Research', path: '/', scrollTo: 'research' },
+    { label: 'Resume', path: '/resume' },
     { label: 'About', path: '/about' }
   ];
 
@@ -70,9 +71,9 @@ const Header = () => {
       '/about': 'rgba(255, 255, 255, 0.8)', // About - white
       '/ecowallet': 'rgba(220, 252, 231, 0.8)', // EcoWallet - light green (green-100)
       '/represent-bihar': 'rgba(255, 247, 237, 0.8)', // RepresentBihar - light orange (orange-50)
-      '/delhi-metro': 'rgba(243, 244, 246, 0.8)', // DelhiMetro - light gray (gray-100)
+      '/delhi-metro': 'rgba(243, 232, 255, 0.8)', // DelhiMetro - light purple (purple-100)
       '/gender-bias-research': 'rgba(254, 252, 232, 0.8)', // GenderBias - light yellow (yellow-50)
-      '/insta-effect': 'rgba(243, 232, 255, 0.8)', // InstaEffect - light purple (purple-100)
+      '/insta-effect': 'rgba(243, 244, 246, 0.8)', // InstaEffect - light gray (gray-100)
     };
 
     return backgroundColors[path] || 'rgba(255, 255, 255, 0.8)';
@@ -154,7 +155,7 @@ const Header = () => {
                       <Link
                         to={item?.path}
                         onClick={(e) => handleNavClick(item, e)}
-                        className="relative z-10 text-md font-medium leading-md text-text-primary font-poppins py-2"
+                        className="relative z-10 text-md font-bold leading-md text-text-primary font-poppins py-2"
                         role="menuitem"
                       >
                         {item?.label}

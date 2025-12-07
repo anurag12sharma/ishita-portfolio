@@ -211,7 +211,7 @@ const EcoWallet = () => {
 
           {/* Slide 5 - Unpacking User Eco-Behaviour */}
           <div>
-            <img src="./public/images/eco.svg" alt="" />
+            <img src="./images/eco.svg" alt="" />
           </div>
 
           {/* Slide 6 - Interview Framework */}
@@ -477,7 +477,7 @@ const EcoWallet = () => {
           </section>
 
           <div>
-            <img src="./public/images/eco-7.svg" alt="" />
+            <img src="/images/eco-7.svg" alt="" />
           </div>
 
           {/* Slide 17 - Evaluating Usability */}
@@ -539,7 +539,7 @@ const EcoWallet = () => {
 
           {/* Slide 18 - Improving EcoWallet */}
           <div>
-            <img src="./public/images/eco-8.svg" alt="" />
+            <img src="/images/eco-8.svg" alt="" />
           </div>
 
           {/* Additional slides can be added here following the same pattern */}

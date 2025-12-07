@@ -18,7 +18,7 @@ const InstaEffectPage = () => {
         
         <main>
           <div className='-mt-[20%] w-full overflow-hidden'>
-            <img className="w-full block" src="./public/images/insta.svg" alt="Impact of Social Media on Body Image Satisfaction Title Slide" />
+            <img className="w-full block" src="images/insta.svg" alt="Impact of Social Media on Body Image Satisfaction Title Slide" />
           </div>
 
           {/* Additional slides can be added here following the same pattern */}
