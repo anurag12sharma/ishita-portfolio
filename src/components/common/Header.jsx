@@ -10,7 +10,7 @@ const Header = () => {
     { label: 'Home', path: '/' },
     { label: 'Design', path: '/', scrollTo: 'design' },
     { label: 'Research', path: '/', scrollTo: 'research' },
-    { label: 'Resume', path: '/resume' },
+    { label: 'Resume', path: 'https://drive.google.com/file/d/1_n7dUMrBleD50Ns2Ho425BIix_9aG1tD/view?usp=sharing'},
     { label: 'About', path: '/about' }
   ];
 

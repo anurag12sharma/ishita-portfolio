@@ -43,7 +43,7 @@ const PersonalIntro = () => {
             {/* Enhanced CTA button */}
             <div className="animate-slide-up" style={{ animationDelay: '0.3s' }}>
               <a
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/1_n7dUMrBleD50Ns2Ho425BIix_9aG1tD/view?usp=sharing"
                 download
                 className="group relative inline-flex items-center gap-3 px-6 py-3.5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-full shadow-medium hover:shadow-hover transition-all duration-300 hover:scale-105 overflow-hidden"
               >
