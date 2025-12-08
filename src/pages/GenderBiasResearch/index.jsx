@@ -19,7 +19,7 @@ const GenderBiasResearchPage = () => {
         <main>
           {/* Slide 1: Title Slide */}
           <div>
-            <img src="./public/images/gender-11.svg" alt="" />
+            <img src="images/gender-11.svg" alt="" />
           </div>
         </main>
 
