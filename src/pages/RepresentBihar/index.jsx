@@ -12,6 +12,8 @@ const RepresentBihar = () => {
       <Helmet>
         <title>Represent Bihar Case Study | Ishita Gupta Portfolio</title>
         <meta name="description" content="Represent Bihar case study - Redesigning the storytelling and listening experience. A website redesign project at Cornell Tech." />
+        {/* Preload the hero SVG so the browser prioritizes fetching it */}
+        <link rel="preload" as="image" href="/images/rep.svg" />
       </Helmet>
 
       <style>{`
@@ -107,7 +109,16 @@ const RepresentBihar = () => {
           </section> */}
 
           <div className='-mt-[10%] w-full overflow-hidden'>
-            <img className="w-full block" src="/images/rep.svg" alt="" />
+            <img
+              className="w-full block"
+              src="/images/rep.svg"
+              alt="Represent Bihar - hero"
+              width="1920"
+              height="1080"
+              decoding="async"
+              loading="eager"
+              fetchpriority="high"
+            />
           </div>
 
 
